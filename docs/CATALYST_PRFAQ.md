@@ -8,13 +8,11 @@
 
 **Catalyst delivers personalized micro-behavior nudges in the tools leaders already use, closing the perception gap between how executives think their teams feel and how they actually feel.**
 
-**San Francisco, CA -- February 18, 2026**
-
 Eighty-seven percent of executives report positive perceptions of psychological safety at work. Only 69% of individual contributors say the same -- and just 53% of individual contributors feel safe taking risks in their organizations.[^1] That perception gap is the most dangerous blind spot in modern leadership -- and it is directly linked to the disengagement crisis that Gallup's State of the Global Workplace report identifies as the defining workforce challenge of our era.
 
 [^1]: The executive-frontline perception gap is documented across multiple studies. Perceptyx's 2025 Benchmark found 87% of executives vs. 69% of individual contributors report positive psychological safety perceptions, with hourly workers at just 66%. Wiley's survey found an even starker gap on risk-taking: only 53% of individual contributors feel safe taking risks, compared to 76% of executives. Both studies confirm that the higher a leader rises, the less accurately they perceive their team's experience.
 
-Today, Catalyst launches the first AI-powered coaching platform purpose-built for executive leaders. Instead of workshops that people forget within a week, Catalyst delivers one small, specific behavior prompt at the exact moment it matters -- right before a meeting, right after a decision, right when a leader's team needs them most. The entire experience takes 30 seconds a day.
+Catalyst is an AI-powered coaching platform purpose-built for leaders across the organization. Instead of workshops that people forget within a week, Catalyst delivers one small, specific behavior prompt at the exact moment it matters -- right before a meeting, right after a decision, right when a leader's team needs them most. The entire experience takes 30 seconds a day.
 
 **The need has never been more urgent.**
 
