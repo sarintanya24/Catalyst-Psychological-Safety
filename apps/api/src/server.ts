@@ -33,6 +33,7 @@ await app.register(import("./routes/library.js"), { prefix: "/api/library" });
 await app.register(import("./routes/pulse.js"), { prefix: "/api/pulse" });
 await app.register(import("./routes/mirror.js"), { prefix: "/api/mirror" });
 await app.register(import("./routes/cascade.js"), { prefix: "/api/cascade" });
+await app.register(import("./routes/webhooks.js"), { prefix: "/webhooks" });
 
 // Start
 const start = async () => {
