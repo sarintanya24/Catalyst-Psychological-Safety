@@ -183,7 +183,79 @@ Field validation from Humu/Perceptyx (founded by former Google CHRO Laszlo Bock)
 
 ---
 
-**9. What results can I expect?**
+**9. What did Google, Microsoft, and Pixar actually do? What can we learn from them?**
+
+The organizations most often cited for psychological safety did not just study it -- they built concrete mechanisms to sustain it. Here is what they did and what we can learn.
+
+**Google -- Project Aristotle (2012-2016)**
+
+Google's People Operations team studied 180+ teams over two years, conducting 200+ interviews and analyzing 250+ team attributes. The most surprising finding: **who was on the team mattered far less than how the team worked together.** Individual talent, seniority, co-location, team size, and personality mix did not predict team effectiveness. Group norms did.
+
+They identified five dynamics of effective teams, ranked by importance:
+
+1. **Psychological safety** -- Can I take risks without feeling insecure or embarrassed?
+2. **Dependability** -- Do teammates follow through reliably?
+3. **Structure & clarity** -- Are roles, plans, and goals clear?
+4. **Meaning** -- Does the work feel personally significant?
+5. **Impact** -- Does my work make a difference?
+
+Psychological safety was number one because it underpins the other four -- without it, people will not flag missed deadlines (dependability), ask clarifying questions (clarity), express what matters to them (meaning), or voice ideas about impact.
+
+Two team norms stood out: **equality in conversational turn-taking** (everyone spoke roughly the same amount) and **high social sensitivity** (members could read how others felt from tone and body language).
+
+**How Google operationalized it:**
+
+- **The gTeams exercise**: A structured intervention used by 3,000+ Googlers across 300+ teams. It included a 10-minute pulse survey measuring the five dynamics, a summary report, a facilitated team conversation, and tailored action plans. Teams reported that simply having a framework and a forcing function to discuss dynamics was the most impactful part.
+- **Manager Actions for Psychological Safety**: A published guide organized into three categories -- Demonstrate Engagement (be present, recap what you heard, solicit input from quiet members), Show Understanding (validate emotions, avoid blame language, do not interrupt), and Show Confidence (invite dissent, respond non-defensively to criticism, model vulnerability by discussing your own mistakes).
+- **Integration into Project Oxygen**: Google's manager competency model was updated in 2018 to explicitly include "Creates an inclusive team environment, showing concern for success and well-being" as a core behavior -- embedding psychological safety into how every manager at Google is evaluated.
+- **Published everything publicly** on the re:Work platform (rework.withgoogle.com) so any organization could use their tools, survey questions, and discussion guides.
+
+Teams that adopted new norms (like sharing a risk taken each week at the start of meetings) improved 6% on psychological safety ratings and 10% on structure and clarity. Sales teams scoring high on the five dynamics exceeded revenue targets by 17%, while low-scoring teams fell short by 19%.
+
+**Microsoft -- The Growth Mindset Transformation (2014-present)**
+
+When Satya Nadella became CEO in 2014, Microsoft's internal culture was defined by stack ranking -- a system that forced managers to label a fixed percentage of employees as underperformers, creating sabotage, knowledge hoarding, and internal competition.
+
+**Concrete mechanisms Microsoft implemented:**
+
+- **Eliminated stack ranking** and replaced annual reviews with continuous "Connects" -- development-focused check-ins evaluating three dimensions: Key Individual Accomplishments, Contributions to the Success of Others, and Results Built on the Work of Others. The last two explicitly reward collaboration and humility.
+- **"Model, Coach, Care" manager framework**: Model growth mindset behaviors, actively coach and develop your people, create environments that prioritize well-being and psychological safety.
+- **Cultural language shift**: Nadella reframed Microsoft from "know-it-all" to "learn-it-all" culture, inspired by Carol Dweck's growth mindset research. This language was embedded in learning programs, performance management, and business reviews.
+- **Company-wide hackathons** encouraging experimentation and risk-taking without fear of failure.
+
+The result: a 22% increase in employee confidence around psychological safety, and a market capitalization increase from $300 billion to over $2.4 trillion during the transformation.
+
+**Pixar -- The Braintrust (1999-present)**
+
+Created during the troubled production of Toy Story 2, formalized by co-founder Ed Catmull as described in *Creativity, Inc.* The Braintrust meets to watch early, unfinished cuts of films and give honest feedback.
+
+**The core rules that make it work:**
+
+- Feedback is about the project, never the person
+- The Braintrust identifies problems but **does not prescribe solutions**
+- **The director owns the final decision** -- the Braintrust has no authority to mandate changes
+- Feedback must come from empathy, not ego
+- Directors share deliberately rough, unfinished work -- normalizing imperfection and making vulnerability safe
+
+Catmull convinced Steve Jobs not to attend Braintrust meetings because his dominant presence would undermine candor. He described his primary role as ensuring the compact of the Braintrust is "protected and upheld" -- because the blocks to candor always reassert themselves and must be addressed continuously. The result: 27 consecutive profitable films, unprecedented in entertainment history.
+
+**Healthcare -- Structural Mechanisms for Speaking Up**
+
+Virginia Mason Medical Center adapted the Toyota Production System to create a Patient Safety Alert system: any employee who encounters a situation likely to harm a patient must report immediately and cease the activity. By 2006, over 6,100 reports had been filed -- 44% from nurses, 23% from nonclinical staff, 8% from physicians. A pivotal moment came when a nurse stopped a physician who was not following protocol; the chief publicly validated the nurse and made clear that leadership would support anyone who acted in patients' best interests. Word spread rapidly.
+
+**The pattern across all of these organizations:**
+
+1. They measured it explicitly and repeatedly -- not once, but continuously
+2. They gave leaders concrete behaviors, not abstract values
+3. They built structural mechanisms (gTeams, Connects, Braintrust rules, Patient Safety Alerts) that force the right conversations to happen
+4. Senior leaders modeled vulnerability first
+5. They treated it as a never-finished discipline, not a one-time initiative
+
+This is exactly what Catalyst operationalizes: measure the gap, deliver the specific behavior at the moment it matters, re-measure, and sustain the discipline over time.
+
+---
+
+**10. What results can I expect?**
 
 Based on the underlying research and field data from nudge-based coaching platforms:
 
@@ -197,7 +269,7 @@ The compounding effects are significant. Research from BCG shows that when a sin
 
 ---
 
-**10. What platforms does Catalyst integrate with?**
+**11. What platforms does Catalyst integrate with?**
 
 Catalyst integrates with the tools leaders already use:
 
@@ -212,7 +284,7 @@ Each channel is independently toggleable. Leaders choose where they want to be r
 
 ---
 
-**11. How do I get started?**
+**12. How do I get started?**
 
 Three steps, eight minutes total:
 
