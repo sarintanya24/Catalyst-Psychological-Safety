@@ -9,6 +9,7 @@
     "rootDir": "src",
     "resolveJsonModule": true,
     "declaration": true,
+    "skipLibCheck": true,
     "paths": {
       "@shared/*": ["../../packages/shared/src/*"]
     }
