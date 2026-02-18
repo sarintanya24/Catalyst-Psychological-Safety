@@ -10,7 +10,7 @@
 
 **San Francisco, CA -- February 18, 2026**
 
-Eighty-seven percent of executives report positive perceptions of psychological safety at work. Only 69% of individual contributors say the same -- and just 53% of individual contributors feel safe taking risks in their organizations.[^1] That perception gap is the most dangerous blind spot in modern leadership -- and it is costing the global economy $8.8 trillion a year in lost productivity from disengaged workers (Gallup, State of the Global Workplace).
+Eighty-seven percent of executives report positive perceptions of psychological safety at work. Only 69% of individual contributors say the same -- and just 53% of individual contributors feel safe taking risks in their organizations.[^1] That perception gap is the most dangerous blind spot in modern leadership -- and it is directly linked to the disengagement crisis that Gallup's State of the Global Workplace report identifies as the defining workforce challenge of our era.
 
 [^1]: The executive-frontline perception gap is documented across multiple studies. Perceptyx's 2025 Benchmark found 87% of executives vs. 69% of individual contributors report positive psychological safety perceptions, with hourly workers at just 66%. Wiley's survey found an even starker gap on risk-taking: only 53% of individual contributors feel safe taking risks, compared to 76% of executives. Both studies confirm that the higher a leader rises, the less accurately they perceive their team's experience.
 
@@ -26,7 +26,7 @@ Executives already know that psychological safety matters. Google's Project Aris
 
 **The world's best organizations already know this.** Google's Project Aristotle -- a landmark study of 180+ teams -- found that psychological safety is the single most important factor distinguishing high-performing teams, with those teams 2.5x more likely to be rated as high-performing by executives. Microsoft's transformation under Satya Nadella, which shifted the company from a "know-it-all" to a "learn-it-all" culture using Carol Dweck's growth mindset framework, coincided with a market capitalization increase from $300 billion to over $2.4 trillion -- and a 22% increase in employee confidence around psychological safety. Pixar's Braintrust model -- where directors receive candid feedback with no authority to mandate changes -- has produced 27 consecutive profitable films, unprecedented in entertainment history. In healthcare, a 2024 systematic review found significant positive relationships between team psychological safety and patient safety outcomes, validating Edmondson's original hospital research where "better" teams reported more errors because they felt safe doing so. These organizations did not stumble into psychological safety. They invested in it deliberately. What they lack -- and what every organization lacks -- is a scalable mechanism to build it leader by leader, day by day.
 
-The current market does not solve this. Survey platforms like Culture Amp and Perceptyx measure the problem but do not coach leaders through it. Executive coaching firms charge $500 to $1,500 per hour and require scheduled sessions that busy executives cancel. AI coaching chatbots like BetterUp and CoachHub are manager-focused and generic. No product combines measurement, personalized coaching, and a cascade mechanism to propagate change through the organization -- and no product is designed specifically for the constraints of C-suite executives.
+The current approaches do not solve this. Survey platforms measure the problem but do not coach leaders through it. Traditional executive coaching requires scheduled sessions that busy executives cancel, and skills practiced in a coaching room do not transfer to the pressure of real meetings. AI coaching chatbots are manager-focused and generic. No approach combines measurement, personalized coaching, and a cascade mechanism to propagate change through the organization -- and none are designed specifically for the constraints of senior leaders.
 
 **Catalyst is invisible coaching.** It does not ask executives to learn a framework, attend a session, or open a new app. It embeds directly into Slack, Microsoft Teams, Zoom, email, and the leader's calendar. Using the SCARF neuroscience model (Status, Certainty, Autonomy, Relatedness, Fairness) and 30 years of psychological safety research from Amy Edmondson, Timothy Clark, BJ Fogg, and David Rock, Catalyst identifies the exact micro-behavior each leader needs to practice and delivers it at the moment of highest contextual relevance.
 
@@ -61,9 +61,9 @@ These research foundations are embedded in six design constraints that govern ev
 | **Easy exit, easy return** | Pausing should feel natural, not like failure. Re-engaging should be seamless |
 | **Zero cognitive load** | The nudge should be understood in under three seconds |
 
-"We built Catalyst because every executive coaching product on the market asks leaders to add something to their day," said Dr. Elena Torres, CEO and co-founder of Catalyst. "Executives do not have more time to give. But they do have meetings, decisions, and conversations happening every day. Catalyst makes those existing moments slightly better -- and that is enough. Behavior change does not require heroic effort. It requires the right prompt at the right time, repeated over weeks and months. The neuroscience is clear: that is how neural pathways rewire."
+Catalyst was built because every leadership development approach asks leaders to add something to their day. Senior leaders do not have more time to give. But they do have meetings, decisions, and conversations happening every day. Catalyst makes those existing moments slightly better -- and that is enough. Behavior change does not require heroic effort. It requires the right prompt at the right time, repeated over weeks and months. The neuroscience is clear: that is how neural pathways rewire.
 
-Sarah Chen, Chief Product Officer at a Fortune 500 technology company and early Catalyst user, described the experience: "I was skeptical. I have done the leadership workshops, the 360 reviews, the executive coaching. They all helped for a few weeks and then faded. Catalyst is different because I barely notice it. I get a one-sentence nudge 15 minutes before a 1:1, and it is always relevant -- 'James has not spoken up in your last three team meetings. Try opening with: What is something you have been thinking about that we haven't discussed?' That took me five seconds to read. I tried it. James opened up about a product risk no one had surfaced. That was my Mirror Moment -- not the dashboard, but the actual moment in the meeting when I realized what I had been missing."
+One early user, a VP of Engineering, described the experience: "I was skeptical. I have done the leadership workshops, the 360 reviews, the executive coaching. They all helped for a few weeks and then faded. Catalyst is different because I barely notice it. I get a one-sentence nudge 15 minutes before a 1:1, and it is always relevant -- 'James has not spoken up in your last three team meetings. Try opening with: What is something you have been thinking about that we haven't discussed?' That took me five seconds to read. I tried it. James opened up about a product risk no one had surfaced. That was my Mirror Moment -- not the dashboard, but the actual moment in the meeting when I realized what I had been missing."
 
 **How Catalyst works in three steps:**
 
@@ -75,9 +75,9 @@ Sarah Chen, Chief Product Officer at a Fortune 500 technology company and early 
 
 Research shows leaders who practice 2-3 micro-behaviors per week see neural pathway rewiring within 6-8 weeks and measurable team safety improvements within 12 weeks. Humu/Perceptyx's field data demonstrates 8-12 point improvements in manager effectiveness scores. BCG's study of 28,000 professionals found that teams with psychological safety see attrition risk drop to 3% (from 12%), with retention effects 4-6x stronger for underrepresented groups.
 
-**Catalyst is available today starting at $50 per leader per month for teams, $150 per leader per month for the full enterprise suite with Zoom AI Companion integration and cascade dashboards.** Annual enterprise plans with dedicated onboarding and peer cohort facilitation are available for organizations with 50 or more leaders.
+**Catalyst is available now for leaders across the organization.** Enrollment takes 8 minutes. Your first nudge arrives 2-3 days later, timed to your next relevant meeting.
 
-To join the waitlist or request a demo, visit **catalyst.ai**.
+To get started, visit the Catalyst portal through your organization's internal tools or reach out to your L&D team.
 
 ---
 
@@ -85,7 +85,7 @@ To join the waitlist or request a demo, visit **catalyst.ai**.
 
 ---
 
-### External FAQs (Customer-Facing)
+### Leader FAQs
 
 ---
 
@@ -101,7 +101,7 @@ Traditional executive coaching is valuable but has three structural limitations.
 
 Catalyst solves all three. It requires zero scheduled time -- nudges arrive in the leader's existing workflow. It delivers prompts at the exact moment of relevance -- 15 minutes before a specific meeting with a specific person. And it provides a continuous feedback loop through monthly team pulse surveys and Zoom meeting analysis that shows whether behavior is actually changing how the team experiences the leader.
 
-Catalyst costs $50-150 per leader per month. Traditional executive coaching costs $500-1,500 per hour. Catalyst is not a replacement for deep executive coaching -- it is the daily reinforcement layer that makes coaching stick.
+Catalyst is not a replacement for deep executive coaching -- it is the daily reinforcement layer that makes development stick between formal coaching sessions, workshops, and reviews.
 
 ---
 
@@ -195,23 +195,11 @@ Based on the underlying research and field data from nudge-based coaching platfo
 - **Within 6 months:** Compounding effects. Teams with high psychological safety show 50% higher productivity, 31% more innovation, 27% less turnover, and 76% more engagement. Retention effects are 4-6x stronger for underrepresented groups (BCG, 28,000 professionals).
 - **Within 12 months:** Cascade effects as your direct reports begin their own journeys. Organizational culture shift becomes measurable.
 
-The Niagara Institute calculates a 230% ROI on every dollar invested in psychological safety. Catalyst's pricing makes the unit economics straightforward: a single prevented departure of a senior employee (replacement cost: 1.5-2x salary) pays for years of Catalyst for an entire leadership team.
+The compounding effects are significant. Research from BCG shows that when a single senior leader improves their team's psychological safety, the ripple effects extend beyond their immediate reports -- their direct reports begin modeling the same behaviors with their own teams. This is what makes the cascade model so powerful: one leader's development investment multiplies across the organization.
 
 ---
 
-**10. How much does Catalyst cost?**
-
-- **Team plan:** $50 per leader per month. Includes the mobile app, bot nudges (Slack, Teams, email), SCARF assessment, team pulse surveys, Mirror Moments, nudge library, and the 3-dial control system.
-
-- **Enterprise plan:** $150 per leader per month. Adds Zoom AI Companion integration (post-meeting insights and real-time in-meeting sidebar), cascade dashboards, peer cohort facilitation, organization-wide analytics, and dedicated onboarding.
-
-- **Annual enterprise agreements** are available for organizations with 50 or more leaders, with volume pricing and a dedicated customer success partner.
-
-For context: traditional executive coaching costs $500-1,500 per hour. Catalyst delivers continuous, contextual coaching for the cost of a single coaching session every one to three months.
-
----
-
-**11. What platforms does Catalyst integrate with?**
+**10. What platforms does Catalyst integrate with?**
 
 Catalyst integrates with the tools leaders already use:
 
@@ -226,21 +214,21 @@ Each channel is independently toggleable. Leaders choose where they want to be r
 
 ---
 
-**12. How do I get started?**
+**11. How do I get started?**
 
 Three steps, eight minutes total:
 
-1. **Sign up** at catalyst.ai and complete the SCARF Quick Assessment (3 minutes -- five sliders, feels like a personality quiz).
+1. **Complete the SCARF Quick Assessment** through the Catalyst portal (3 minutes -- five sliders that map your leadership profile across five neuroscience domains).
 2. **Send the baseline pulse survey** to your direct reports (Catalyst handles delivery -- your team members spend 2 minutes answering Edmondson's validated 7-item survey anonymously).
 3. **Pick your first micro-behavior** from a curated card deck and connect your preferred channels (Slack, Teams, Zoom, email, calendar).
 
 Your first nudge arrives 2-3 days later, timed to your first relevant meeting. Baseline pulse results come in within 48-72 hours, and your first Mirror Moment lands at Week 4.
 
-Visit **catalyst.ai** to join the waitlist or request a live demo.
+Reach out to your L&D team or visit the Catalyst portal through your organization's internal tools to begin.
 
 ---
 
-### Internal FAQs (Team / Stakeholder-Facing)
+### Program Design FAQs
 
 ---
 
@@ -254,41 +242,37 @@ Second, the AI imperative. The MIT/Infosys 2025 report found that 83% of leaders
 
 Third, the technology enablement. Zoom's AI Companion APIs, real-time media streaming, and AI-powered personalization capabilities did not exist two years ago. These make it possible for the first time to deliver coaching that is tied to actual meeting behavior rather than generic advice.
 
-Fourth, the market gap. After analyzing 19+ products in the space -- including BetterUp, CoachHub, NILES, Perceptyx/Humu, Valence, Cloverleaf, and Culture Amp -- no single platform combines measurement, AI coaching, nudge delivery, and cascade propagation for executive leaders. Existing tools either measure, coach, or nudge. None close the full loop. And none are designed for the specific constraints of C-suite executives: less time, higher stakes, stronger ego-protective instincts.
+Fourth, the approach gap. Existing leadership development tools either measure (surveys), coach (scheduled sessions), or train (workshops). None close the full loop: measure the gap, nudge the behavior at the moment it matters, re-measure the impact, and cascade the change through the organization. And none are designed for the specific constraints of senior leaders: less time, higher stakes, stronger ego-protective instincts.
 
 ---
 
-**2. What is the market size?**
+**2. What is the organizational impact potential?**
 
-The addressable market sits at the intersection of three large categories:
+The impact of psychological safety on organizational performance is well-documented across multiple research streams:
 
-- **Executive coaching:** $20B+ globally, growing 15-20% annually
-- **Employee engagement / experience platforms:** $4B+, growing 12% annually
-- **Leadership development:** $60B+ globally
-
-Our initial target is the executive coaching segment, specifically the gap between traditional high-touch coaching ($500-1,500/hour, limited to top executives) and manager-focused digital platforms ($20-50/user/month, not designed for executives). This whitespace -- AI-powered coaching designed specifically for senior leaders at $50-150/month -- is largely unoccupied.
-
-Conservative sizing: 500,000 VP+ leaders at Fortune 5000 companies. At $100/leader/month average, the initial addressable market is $600M annually. With cascade expansion to the next level of leadership (directors, senior managers), the addressable market exceeds $2B.
+- **Team performance:** Google's Project Aristotle found psychologically safe teams are 2.5x more likely to be rated high-performing by executives. Teams with high psychological safety show 50% higher productivity, 31% more innovation, and 76% more engagement.
+- **Talent retention:** BCG's study of 28,000 professionals found that attrition risk drops to 3% (from 12%) in psychologically safe teams, with retention effects 4-6x stronger for underrepresented groups -- making this one of the most powerful levers for DEI outcomes.
+- **AI transformation readiness:** MIT/Infosys 2025 found that 83% of leaders say psychological safety directly impacts the success of AI initiatives, yet only 39% rate their organization's safety as "high." Organizations whose teams can challenge assumptions and experiment without fear will out-adapt those whose teams stay silent.
+- **Cascade multiplier:** When one senior leader improves, the behavior modeling effect propagates to their direct reports' teams. A single VP who reaches Stage 2 can catalyze development across 30-100+ people in their reporting chain.
 
 ---
 
-**3. Who are the competitors?**
+**3. How does Catalyst compare to existing leadership development approaches?**
 
-No direct competitor offers our full combination of executive-specific design, SCARF-informed personalization, in-workflow nudges, Zoom AI Companion integration, and cascade propagation. The closest analogues operate in adjacent segments:
+No existing approach offers the full combination of executive-specific design, SCARF-informed personalization, in-workflow nudges, meeting intelligence, and cascade propagation. Here is how Catalyst differs from common alternatives:
 
-| Competitor | What They Do | Gap vs. Catalyst |
+| Approach | What It Does | How Catalyst Differs |
 |---|---|---|
-| **Perceptyx / Humu** | Survey + nudges at scale | Manager-focused, no exec-specific design, no Zoom integration, no cascade |
-| **BetterUp** ($4.7B valuation) | AI + human coaching | Requires scheduled sessions, manager-focused, no nudge-in-workflow model |
-| **CoachHub AIMY** | AI coaching chatbot | Chat-based (requires active engagement), no meeting context, no cascade |
-| **NILES** (NeuroLeadership Institute) | AI leadership coach built on neuroscience research | Broad leadership focus (not PS-specific), chat-initiated (requires leader to engage), no team measurement, no meeting context, no cascade. Shares SCARF foundation with Catalyst but does not operationalize it into contextual nudges tied to real meetings and real team data |
-| **Valence (Nadia)** ($50M Series B) | Agentic AI coaching | Team-focused, not executive-specific, no Zoom integration |
-| **Culture Amp** | Surveys + analytics | Measurement only, no coaching, no nudges |
-| **Cloverleaf** | Pre-meeting nudges | Uses 12 assessments but no SCARF, no cascade, no Zoom AI Companion |
+| **Survey platforms** (Culture Amp, Perceptyx) | Measure engagement and safety | Catalyst measures AND coaches -- closing the loop between insight and behavior change |
+| **Traditional executive coaching** | 1:1 sessions with a coach | Catalyst reinforces coaching daily in the flow of work -- no scheduled sessions, no context collapse |
+| **AI coaching chatbots** (BetterUp, CoachHub) | On-demand chat-based coaching | Catalyst pushes nudges at the moment of relevance -- leaders do not need to remember to engage |
+| **Nudge platforms** (Humu) | Behavioral nudges at scale | Catalyst adds SCARF personalization, meeting context, Zoom intelligence, and cascade propagation |
+| **NILES** (NeuroLeadership Institute) | AI leadership coach built on neuroscience | Shares SCARF foundation but is broad-purpose; requires leader-initiated chat, no team measurement, no meeting context, no cascade |
+| **Pre-meeting nudge tools** (Cloverleaf) | Assessment-based nudges | No SCARF model, no cascade mechanism, no Zoom AI Companion integration |
 
-**NILES deserves special attention** because it is the closest product to Catalyst's neuroscience-grounded philosophy. Built by the NeuroLeadership Institute (founded by David Rock, creator of the SCARF model that also underpins Catalyst), NILES draws on 60+ peer-reviewed papers and insights from 200+ Ph.D. scientists. It offers four modes -- coaching, advice and mentoring, feedback, and roleplay -- and is used by organizations including Microsoft, NASA, and Capital One. However, NILES is a general-purpose leadership coaching tool, not a psychological safety platform. It requires the leader to initiate every interaction (chat-based), does not integrate with meeting tools for contextual nudges, does not measure team psychological safety, and does not include a cascade mechanism. Catalyst builds on the same neuroscience foundation but closes the loop: measure the gap, nudge the behavior at the moment it matters, re-measure the impact, and cascade the change through the organization.
+**NILES deserves special attention** because it is the closest tool to Catalyst's neuroscience-grounded philosophy. Built by the NeuroLeadership Institute (founded by David Rock, creator of the SCARF model that also underpins Catalyst), NILES draws on 60+ peer-reviewed papers. However, NILES is a general-purpose leadership coaching tool, not a psychological safety platform. It requires the leader to initiate every interaction, does not integrate with meeting tools for contextual nudges, does not measure team psychological safety, and does not include a cascade mechanism. Catalyst builds on the same neuroscience foundation but closes the loop: measure the gap, nudge the behavior at the moment it matters, re-measure the impact, and cascade the change through the organization.
 
-Our defensible differentiation: the Zoom AI Companion integration (post-meeting contextual nudges + real-time sidebar), the cascade model, the closed-loop measure-nudge-remeasure architecture, and the executive-specific invisible coaching philosophy.
+Catalyst's unique approach: the Zoom AI Companion integration (post-meeting contextual nudges + real-time sidebar), the cascade model, the closed-loop measure-nudge-remeasure architecture, and the executive-specific invisible coaching philosophy.
 
 ---
 
@@ -315,7 +299,7 @@ The MVP focuses on proving the core loop -- Assess, Nudge, Measure -- for a sing
 - Mobile push notifications
 - Deep Coaching Sessions
 
-This scoping lets us validate the core hypothesis -- that contextual micro-behavior nudges change executive behavior and improve team safety scores -- before investing in the more complex integrations.
+This scoping lets us validate the core hypothesis -- that contextual micro-behavior nudges change leader behavior and improve team safety scores -- before investing in the more complex integrations.
 
 ---
 
@@ -348,14 +332,14 @@ The working prototype includes a cross-platform mobile app (iOS and Android), Sl
 **Outcome metrics (lagging indicators):**
 - Team safety score improvement from baseline (target: +8 points within 12 weeks, consistent with Humu/Perceptyx data)
 - Micro-behavior practice frequency (target: 2-3 per week per leader)
-- Net Promoter Score among leaders (target: >50)
-- Cascade adoption rate -- percentage of leaders who invite direct reports at Stage 2 (target: >30%)
+- Leader satisfaction score (target: >80% would recommend to peers)
+- Perception gap reduction between leaders and their teams
 
-**Business metrics:**
-- Monthly recurring revenue
-- Customer acquisition cost
-- Leader retention rate at 6 months (target: >70%)
-- Enterprise expansion rate (cascade-driven seat growth)
+**Organizational impact metrics:**
+- Leader retention in program at 6 months (target: >70%)
+- Cascade adoption rate -- percentage of leaders who invite direct reports at Stage 2 (target: >30%)
+- Organization-wide safety score trend (measured quarterly)
+- Cross-functional team performance indicators (innovation output, retention, engagement)
 
 ---
 
@@ -373,29 +357,29 @@ The working prototype includes a cross-platform mobile app (iOS and Android), Sl
 
 ---
 
-**8. What is the go-to-market strategy?**
+**8. What is the internal rollout strategy?**
 
-**Phase 1 -- Founder-led sales (Months 1-6):**
-- Target 10-15 design partners: VP+ leaders at mid-to-large tech companies who are already investing in coaching or leadership development.
-- Offer free pilot (3 months, 5-10 leaders per organization) in exchange for data, testimonials, and case studies.
-- Channel: direct outreach to CHROs, CPOs, and CEOs through the founding team's network. Content marketing through LinkedIn (psychological safety research insights, not product promotion).
+**Phase 1 -- Pilot cohort (Months 1-3):**
+- Identify 10-15 senior leaders who are already invested in team development and open to new approaches.
+- Run a 12-week pilot with weekly check-ins to gather feedback and refine the experience.
+- Focus on proving the core loop: leaders engage with nudges, team safety scores improve.
 
-**Phase 2 -- Prove the outcome (Months 4-9):**
-- Publish first case studies showing team safety score improvements (the "8-12 point improvement in 12 weeks" claim, validated with our own data).
-- Seek endorsement from recognized researchers or practitioners (Edmondson's ecosystem, NeuroLeadership Institute community).
-- Launch paid pilots at $50/leader/month.
+**Phase 2 -- Validate and iterate (Months 4-6):**
+- Measure pilot outcomes: team safety score improvements, leader engagement rates, qualitative feedback.
+- Share anonymized, aggregated results with leadership to build organizational support.
+- Refine nudge quality, timing, and personalization based on pilot data.
 
-**Phase 3 -- Scale through cascade (Months 6-12):**
-- The cascade model is the organic growth engine. Each leader who reaches Stage 2 becomes a distribution channel for 3-8 additional seats (their direct reports).
-- Enterprise sales motion targeting organizations with 50+ executives: CHRO-led deals, priced at $150/leader/month enterprise.
-- Conference presence at NeuroLeadership Summit, SHRM, HR Tech.
+**Phase 3 -- Expand through cascade (Months 6-9):**
+- Pilot leaders who reach Stage 2 invite their direct reports to begin their own Catalyst journey.
+- The cascade model is the organic growth mechanism -- each leader who succeeds creates pull from the next level down.
+- L&D team supports onboarding of new cohorts with lightweight facilitation.
 
-**Phase 4 -- Platform expansion (Months 12-18):**
-- Expanded platform integrations and channel reach.
-- Zoom AI Companion and real-time sidebar differentiate at the enterprise tier.
-- Partner integrations with HRIS platforms (Workday, BambooHR) for automated onboarding of new leaders.
+**Phase 4 -- Organization-wide adoption (Months 9-12):**
+- Expanded platform integrations (Zoom AI Companion, additional channels).
+- HRIS integration for automated onboarding of newly promoted leaders.
+- Organization-wide culture analytics and leadership development dashboards.
 
-The cascade model creates a viral coefficient that traditional B2B SaaS does not have. Each executive who succeeds organically creates demand from their direct reports, who then create demand from theirs.
+The cascade model creates organic, pull-based adoption. Each leader who develops their team creates visible results that inspire their peers and direct reports to join.
 
 ---
 
@@ -419,13 +403,13 @@ Catalyst's design is governed by five principles:
 
 | Quarter | Focus | Key Deliverables |
 |---|---|---|
-| **Q1 (Months 1-3)** | Core loop MVP | Mobile app (onboarding, dashboard, nudge library, dials), Slack integration, email digest, calendar integration, AI-powered nudge personalization, baseline pulse survey, first Mirror Moment. Design partners onboarded. |
-| **Q2 (Months 4-6)** | Prove the outcome | Teams integration, mobile push notifications, peer cohort v1 (manual facilitation), post-meeting nudges via Zoom AI Companion, Deep Coaching Sessions, second pulse survey and trend tracking, first case studies published. Paid pilots begin. |
-| **Q3 (Months 7-9)** | Cascade + Zoom | Cascade model (invite direct reports, organization dashboard, safety heatmap), Zoom real-time in-meeting sidebar, advanced AI personalization (meeting history patterns, multi-behavior stacking), scenario-based nudges. Enterprise sales motion begins. |
-| **Q4 (Months 10-12)** | Scale + optimize | HRIS integrations (Workday, BambooHR), auto-enrollment for new leaders, mentor role for Stage 4 leaders, organization-wide culture analytics, SOC 2 Type II certification. Target: 500+ active leaders across 15-25 organizations. |
+| **Q1 (Months 1-3)** | Core loop + pilot | Mobile app (onboarding, dashboard, nudge library, dials), Slack integration, email digest, calendar integration, AI-powered nudge personalization, baseline pulse survey, first Mirror Moment. Pilot cohort onboarded. |
+| **Q2 (Months 4-6)** | Validate outcomes | Teams integration, mobile push notifications, peer cohort v1 (facilitated learning circles), post-meeting nudges via Zoom AI Companion, Deep Coaching Sessions, second pulse survey and trend tracking. Pilot results measured and shared. |
+| **Q3 (Months 7-9)** | Cascade + deepen | Cascade model (invite direct reports, organization dashboard, safety heatmap), Zoom real-time in-meeting sidebar, advanced AI personalization (meeting history patterns, multi-behavior stacking), scenario-based nudges. Second wave of leaders onboarded through cascade. |
+| **Q4 (Months 10-12)** | Scale across org | HRIS integrations for auto-enrollment of new leaders, mentor role for Stage 4 leaders, organization-wide culture analytics, leadership development reporting. Target: broad adoption across leadership levels. |
 
-The roadmap is sequenced to validate assumptions before scaling complexity. Q1 proves that executives engage with micro-behavior nudges. Q2 proves that engagement produces measurable team outcomes. Q3 proves that cascade propagation works. Q4 scales what works.
+The roadmap is sequenced to validate assumptions before scaling complexity. Q1 proves that leaders engage with micro-behavior nudges. Q2 proves that engagement produces measurable team outcomes. Q3 proves that cascade propagation works. Q4 scales what works across the organization.
 
 ---
 
-*This document follows the Amazon PR/FAQ format. The press release describes the product as if it has launched. The FAQs address the most important questions from customers (external) and from the team and stakeholders (internal). All statistics and research references are drawn from validated sources including: Perceptyx 2025 Benchmark, Wiley Psychological Safety Survey, Gallup State of the Global Workplace (2024), BCG 2024 Study (28,000 professionals), MIT/Infosys 2025 Report, Google Project Aristotle (2012-2016), Edmondson (1999), Frazier et al. (2017) meta-analysis, and the NeuroLeadership Institute. Full citations are maintained in the project research files.*
+*This document follows the Amazon PR/FAQ format. The press release describes the product as if it has launched. The FAQs address the most important questions from leaders enrolling in the program and from the team designing and building it. All statistics and research references are drawn from validated sources including: Perceptyx 2025 Benchmark, Wiley Psychological Safety Survey, Gallup State of the Global Workplace (2024), BCG 2024 Study (28,000 professionals), MIT/Infosys 2025 Report, Google Project Aristotle (2012-2016), Edmondson (1999), Frazier et al. (2017) meta-analysis, and the NeuroLeadership Institute. Full citations are maintained in the project research files.*
