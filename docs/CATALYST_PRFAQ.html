@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalyst — PR/FAQ</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1B2A4A;
+    --amber: #E8913A;
+    --sage: #4A9E7D;
+    --coral: #E07A6B;
+    --cream: #F8F7F4;
+    --surface: #FFFFFF;
+    --desk: #e8e6e1;
+    --text: #2C2C2C;
+    --text-light: #5A5A5A;
+    --text-muted: #8a8580;
+    --border: #D5D2CD;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.55;
+    color: var(--text);
+    background: var(--desk);
+    padding: 40px 0;
+  }
+
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 20px auto;
+    padding: 0.85in 1in 1.2in;
+    background: var(--surface);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .page-number {
+    position: absolute;
+    bottom: 0.5in;
+    right: 1in;
+    font-size: 10px;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+  }
+
+  .confidential {
+    position: absolute;
+    bottom: 0.5in;
+    left: 1in;
+    font-size: 9px;
+    color: #ccc;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  /* Wordmark */
+  .wordmark {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    color: var(--navy);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--amber);
+    display: inline-block;
+  }
+
+  /* Typography */
+  h1 {
+    font-size: 17pt;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 13pt;
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 18px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 3px;
+  }
+
+  h3 {
+    font-size: 11pt;
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 14px;
+    margin-bottom: 4px;
+  }
+
+  h4 {
+    font-size: 10pt;
+    font-weight: 600;
+    color: var(--navy);
+    margin-top: 10px;
+    margin-bottom: 3px;
+  }
+
+  .subheadline {
+    font-size: 11pt;
+    font-weight: 500;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 8px;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .p-tight { margin-bottom: 4px; }
+  .p-none { margin-bottom: 0; }
+
+  /* Lists */
+  ul, ol {
+    margin: 4px 0 8px 18px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 3px;
+  }
+
+  li p {
+    margin-bottom: 3px;
+  }
+
+  /* Feature list */
+  .feature-name {
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  /* Quote block */
+  .quote-block {
+    border-left: 3px solid var(--amber);
+    padding: 8px 14px;
+    margin: 10px 0;
+    background: var(--cream);
+    font-style: italic;
+    font-size: 10pt;
+    color: var(--text-light);
+  }
+  .quote-block .attribution {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--navy);
+    margin-top: 4px;
+    font-size: 9pt;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+    font-size: 9.5pt;
+  }
+  th {
+    background: var(--navy);
+    color: white;
+    text-align: left;
+    padding: 5px 8px;
+    font-weight: 600;
+    font-size: 9pt;
+  }
+  td {
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tr:nth-child(even) td {
+    background: var(--cream);
+  }
+
+  /* FAQ styling */
+  .faq-q {
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 10.5pt;
+    margin-top: 12px;
+    margin-bottom: 3px;
+  }
+  .faq-a {
+    margin-bottom: 6px;
+    text-align: justify;
+  }
+
+  .section-label {
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-top: 16px;
+    margin-bottom: 6px;
+  }
+
+  /* Steps */
+  .steps {
+    margin: 6px 0 8px 0;
+  }
+  .steps .step {
+    margin-bottom: 4px;
+  }
+  .steps .step-num {
+    font-weight: 700;
+    color: var(--amber);
+  }
+
+  /* Footnote */
+  .footnote {
+    font-size: 8.5pt;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    padding-top: 6px;
+    margin-top: 14px;
+    line-height: 1.4;
+  }
+  .footnote sup {
+    color: var(--amber);
+    font-weight: 700;
+  }
+
+  /* Print */
+  @media print {
+    body {
+      background: white;
+      padding: 0;
+    }
+    .page {
+      box-shadow: none;
+      margin: 0;
+      page-break-after: always;
+      page-break-inside: avoid;
+      border: none;
+    }
+    .page:last-child {
+      page-break-after: auto;
+    }
+  }
+
+  /* Small helper classes */
+  .mt-0 { margin-top: 0; }
+  .mb-0 { margin-bottom: 0; }
+  .mb-2 { margin-bottom: 2px; }
+  .mb-4 { margin-bottom: 4px; }
+  .text-small { font-size: 9.5pt; }
+  .text-xs { font-size: 9pt; }
+  .text-xxs { font-size: 8pt; }
+  .accent { color: var(--amber); }
+  .sage { color: var(--sage); }
+  .coral { color: var(--coral); }
+  .navy { color: var(--navy); }
+  .bold { font-weight: 700; }
+  .divider { border-top: 1px solid var(--border); margin: 12px 0; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- PAGE 1 — Press Release (headline, perception gap, urgency)    -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+  <div class="wordmark">Catalyst</div>
+
+  <div class="section-label mt-0">Press Release</div>
+
+  <h1>AI-Powered Invisible Coaching Platform Helps Executive Leaders Build Psychologically Safe Teams &mdash; Without Adding a Single Meeting to Their Calendar</h1>
+
+  <p class="subheadline"><strong>Catalyst delivers personalized micro-behavior nudges in the tools leaders already use, closing the perception gap between how executives think their teams feel and how they actually feel.</strong></p>
+
+  <p>Eighty-seven percent of executives report positive perceptions of psychological safety at work. Only 69% of individual contributors say the same&mdash;and just 53% of individual contributors feel safe taking risks in their organizations.<sup>1</sup> That perception gap is the most dangerous blind spot in modern leadership&mdash;and it is directly linked to the disengagement crisis that Gallup's State of the Global Workplace report identifies as the defining workforce challenge of our era.</p>
+
+  <p>Catalyst is an AI-powered coaching platform purpose-built for leaders across the organization. Instead of workshops that people forget within a week, Catalyst delivers one small, specific behavior prompt at the exact moment it matters&mdash;right before a meeting, right after a decision, right when a leader's team needs them most. The entire experience takes 30 seconds a day.</p>
+
+  <h3>The need has never been more urgent.</h3>
+
+  <p>The current environment is making psychological safety harder to maintain&mdash;and more critical than ever. AI is disrupting how work gets done, creating uncertainty and fear of replacement; over 244,000 tech workers were laid off in 2025 alone, and more than 40% of workers report some form of AI-induced anxiety. Reductions in force across major organizations have eroded trust and signaled to remaining employees that speaking up carries risk. Remote and hybrid work has made it harder for leaders to read the room&mdash;the informal hallway conversations and body language cues that once surfaced concerns have disappeared. Meanwhile, broader sociopolitical tension is creating anxiety that follows people into the workplace. The net result: teams are more likely to self-censor and less likely to speak up at precisely the moment organizations need candor and adaptability most. This is the burning platform. In the age of AI transformation, the organizations whose teams can challenge assumptions, surface concerns, and experiment without fear will out-adapt everyone else. Those whose teams stay silent will not.</p>
+
+  <h3>The problem is not awareness. The problem is behavior change.</h3>
+
+  <p>Executives already know that psychological safety matters. Google's Project Aristotle proved it is the number one predictor of team performance across 180+ teams. Boeing's 346 deaths, Nokia's $143 billion in lost market cap, and Wells Fargo's $3 billion in fines all trace back to cultures where people were afraid to speak up. The research is settled. What is missing is a mechanism that actually changes how leaders behave day to day.</p>
+
+  <div class="footnote">
+    <sup>1</sup> The executive-frontline perception gap is documented across multiple studies. Perceptyx's 2025 Benchmark found 87% of executives vs. 69% of individual contributors report positive psychological safety perceptions, with hourly workers at just 66%. Wiley's survey found an even starker gap on risk-taking: only 53% of individual contributors feel safe taking risks, compared to 76% of executives. Both studies confirm that the higher a leader rises, the less accurately they perceive their team's experience.
+  </div>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 1</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 2 — The evidence, current approaches fail                -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+
+  <h3 class="mt-0">The world's best organizations already know this.</h3>
+
+  <p>Google's Project Aristotle&mdash;a landmark study of 180+ teams&mdash;found that psychological safety is the single most important factor distinguishing high-performing teams, with those teams 2.5x more likely to be rated as high-performing by executives. Microsoft's transformation under Satya Nadella, which shifted the company from a "know-it-all" to a "learn-it-all" culture using Carol Dweck's growth mindset framework, coincided with a market capitalization increase from $300 billion to over $2.4 trillion&mdash;and a 22% increase in employee confidence around psychological safety. Pixar's Braintrust model&mdash;where directors receive candid feedback with no authority to mandate changes&mdash;has produced 27 consecutive profitable films, unprecedented in entertainment history. In healthcare, a 2024 systematic review found significant positive relationships between team psychological safety and patient safety outcomes, validating Edmondson's original hospital research where "better" teams reported more errors because they felt safe doing so. These organizations did not stumble into psychological safety. They invested in it deliberately. What they lack&mdash;and what every organization lacks&mdash;is a scalable mechanism to build it leader by leader, day by day.</p>
+
+  <p>The current approaches do not solve this. Survey platforms measure the problem but do not coach leaders through it. Traditional executive coaching requires scheduled sessions that busy executives cancel, and skills practiced in a coaching room do not transfer to the pressure of real meetings. AI coaching chatbots are manager-focused and generic. No approach combines measurement, personalized coaching, and a cascade mechanism to propagate change through the organization&mdash;and none are designed specifically for the constraints of senior leaders.</p>
+
+  <h2>The Solution: Invisible Coaching</h2>
+
+  <p><strong>Catalyst is invisible coaching.</strong> It does not ask executives to learn a framework, attend a session, or open a new app. It embeds directly into Slack, Microsoft Teams, Zoom, email, and the leader's calendar. Using the SCARF neuroscience model (Status, Certainty, Autonomy, Relatedness, Fairness) and 30 years of psychological safety research from Amy Edmondson, Timothy Clark, BJ Fogg, and David Rock, Catalyst identifies the exact micro-behavior each leader needs to practice and delivers it at the moment of highest contextual relevance.</p>
+
+  <p>The platform includes:</p>
+
+  <ul>
+    <li><p><strong class="feature-name">The 3-Dial System.</strong> Leaders control their experience with three simple dials: Nudge Frequency (from one per week to daily), Insight Depth (from a single sentence to full data with peer benchmarks), and Channel Mix (choose any combination of Slack, Teams, Zoom, email, mobile push, or in-app only). If a leader gets too busy, the system automatically dials itself down. No guilt. No "you missed 3 days" alerts. Zero shame.</p></li>
+
+    <li><p><strong class="feature-name">SCARF-Informed Personalization.</strong> A 3-minute onboarding assessment maps each leader's profile across five neuroscience domains. Every nudge is then personalized using Claude AI&mdash;not generic tips, but specific prompts tied to that leader's blind spots, their upcoming meetings, and their team's actual feedback.</p></li>
+
+    <li><p><strong class="feature-name">Zoom AI Companion Integration.</strong> After meetings, Catalyst analyzes the AI Companion summary to detect seven psychological safety signals&mdash;participation balance, question-to-statement ratio, unacknowledged concerns, airtime dominance, and more. Leaders receive a single, actionable coaching prompt within two hours. An optional real-time in-meeting sidebar provides ambient, glanceable nudges visible only to the leader during live Zoom calls.</p></li>
+
+    <li><p><strong class="feature-name">Deep Coaching Sessions (opt-in).</strong> Most Catalyst interactions take 30 seconds or less. But when a leader wants more&mdash;before a difficult conversation, after a challenging Mirror Moment, or when processing a significant team dynamic&mdash;they can open a Deep Coaching Session. This is a longer, conversational AI coaching interaction where the leader can explore a situation in depth: talk through what happened, consider alternative approaches, practice language for an upcoming conversation, or unpack feedback from their team. Sessions are private, available on-demand, and draw on the leader's full SCARF profile, team data, and behavior history. They typically last 5&ndash;15 minutes. Deep Coaching Sessions are not required and never prompted unsolicited&mdash;they are there when the leader is ready to go deeper.</p></li>
+  </ul>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 2</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 3 — Features continued, design principles table          -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+
+  <ul>
+    <li><p><strong class="feature-name">Mirror Moments.</strong> Monthly side-by-side comparisons showing how the leader rates themselves versus how their team actually experiences them, across all five SCARF domains. This is the moment most leaders go from curious to committed.</p></li>
+
+    <li><p><strong class="feature-name">The Cascade Model.</strong> Once a leader reaches Stage 2, they can invite their direct reports to begin their own Catalyst journey. Those leaders then invite their reports. Culture change propagates downward through the organization, with an executive dashboard showing safety scores across the entire cascade tree.</p></li>
+  </ul>
+
+  <h3>Catalyst is built on five converging research streams</h3>
+
+  <p>Each independently points to the same conclusion: the most effective way to change executive behavior is through tiny, contextual prompts delivered in the flow of work.</p>
+
+  <ul>
+    <li><p><strong>Learning Science (AGES Model, NeuroLeadership Institute).</strong> Lasting learning requires four conditions: Attention (content grabs focus), Generation (the learner creates their own meaning), Emotion (content evokes feeling), and Spacing (repeated exposure over time). Traditional workshops nail Attention but fail on the other three. Catalyst's spaced, contextual, reflective nudges satisfy all four&mdash;the AGES model operationalized.</p></li>
+
+    <li><p><strong>Psychological Safety Research (Edmondson, Clark, Humu/Perceptyx).</strong> Amy Edmondson's research proves psychological safety is the number one predictor of team performance. Timothy Clark's 4 Stages provide the developmental pathway. Humu/Perceptyx proved that nudges delivered in workflow tools produce 8&ndash;12 point improvements in manager effectiveness scores within 12 weeks. Catalyst does not invent new theory&mdash;it operationalizes 30 years of validated research into a delivery mechanism that actually changes behavior.</p></li>
+  </ul>
+
+  <p>These research foundations are embedded in six design constraints that govern every interaction:</p>
+
+  <table>
+    <tr><th>Design Principle</th><th>How Catalyst Implements It</th></tr>
+    <tr><td><strong>Earn every interaction</strong></td><td>Every nudge must feel valuable on its own. If it feels generic, it is a failure</td></tr>
+    <tr><td><strong>One thing at a time</strong></td><td>Never present two behaviors, two insights, or two actions simultaneously</td></tr>
+    <tr><td><strong>Silence is respect</strong></td><td>If there is nothing contextually relevant to say, say nothing</td></tr>
+    <tr><td><strong>Gradual deepening</strong></td><td>Start with one nudge per week. Only increase if the executive engages</td></tr>
+    <tr><td><strong>Easy exit, easy return</strong></td><td>Pausing should feel natural, not like failure. Re-engaging should be seamless</td></tr>
+    <tr><td><strong>Zero cognitive load</strong></td><td>The nudge should be understood in under three seconds</td></tr>
+  </table>
+
+  <p>Catalyst was built because every leadership development approach asks leaders to add something to their day. Senior leaders do not have more time to give. But they do have meetings, decisions, and conversations happening every day. Catalyst makes those existing moments slightly better&mdash;and that is enough. Behavior change does not require heroic effort. It requires the right prompt at the right time, repeated over weeks and months. The neuroscience is clear: that is how neural pathways rewire.</p>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 3</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 4 — Quote, How it works, results                         -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+
+  <div class="quote-block">
+    "I was skeptical. I have done the leadership workshops, the 360 reviews, the executive coaching. They all helped for a few weeks and then faded. Catalyst is different because I barely notice it. I get a one-sentence nudge 15 minutes before a 1:1, and it is always relevant&mdash;'James has not spoken up in your last three team meetings. Try opening with: What is something you have been thinking about that we haven't discussed?' That took me five seconds to read. I tried it. James opened up about a product risk no one had surfaced. That was my Mirror Moment&mdash;not the dashboard, but the actual moment in the meeting when I realized what I had been missing."
+    <div class="attribution">&mdash; VP of Engineering, Early Catalyst User</div>
+  </div>
+
+  <h2>How Catalyst Works in Three Steps</h2>
+
+  <div class="steps">
+    <div class="step"><span class="step-num">1. Assess.</span> An 8-minute onboarding maps the leader's SCARF profile and sends a 2-minute anonymous pulse survey (Edmondson's validated 7-item scale) to their team. Results arrive in 48&ndash;72 hours, revealing the perception gap.</div>
+    <div class="step"><span class="step-num">2. Nudge.</span> The leader picks one micro-behavior to practice&mdash;such as "Ask a genuine question before stating your view" or "Wait 5&ndash;7 seconds after asking a question." Catalyst delivers contextual prompts tied to real upcoming meetings, real team dynamics, and real Zoom meeting data. Each nudge takes 5&ndash;60 seconds to act on.</div>
+    <div class="step"><span class="step-num">3. Cascade.</span> As the leader's behaviors shift and their team's safety scores improve, they invite their direct reports to start their own journey. The system tracks safety scores across the entire organization, turning individual behavior change into culture change.</div>
+  </div>
+
+  <h2>Expected Results</h2>
+
+  <p>Research shows leaders who practice 2&ndash;3 micro-behaviors per week see neural pathway rewiring within 6&ndash;8 weeks and measurable team safety improvements within 12 weeks. Humu/Perceptyx's field data demonstrates 8&ndash;12 point improvements in manager effectiveness scores. BCG's study of 28,000 professionals found that teams with psychological safety see attrition risk drop to 3% (from 12%), with retention effects 4&ndash;6x stronger for underrepresented groups.</p>
+
+  <p><strong>Catalyst is available now for leaders across the organization.</strong> Enrollment takes 8 minutes. Your first nudge arrives 2&ndash;3 days later, timed to your next relevant meeting.</p>
+
+  <p>To get started, visit the Catalyst portal through your organization's internal tools or reach out to your L&amp;D team.</p>
+
+  <div class="divider"></div>
+
+  <h2 style="border-bottom: 2px solid var(--amber); margin-top: 20px;">Frequently Asked Questions</h2>
+
+  <div class="section-label">Leader FAQs</div>
+
+  <p class="faq-q">1. What is Catalyst?</p>
+  <p class="faq-a text-small">Catalyst is an AI-powered coaching platform that helps executive leaders build psychologically safe teams through personalized micro-behavior nudges delivered in the tools they already use&mdash;Slack, Microsoft Teams, Zoom, and email. It is not another app to check. It is not a training program. It is a layer of intelligence that sits on top of a leader's existing workflow and helps them do what they already do&mdash;run meetings, have 1:1s, make decisions&mdash;with one small, specific improvement at a time. The entire daily time commitment is under 30 seconds for the nudge itself, with optional deeper analytics for leaders who want them.</p>
+
+  <p class="faq-q">2. How is Catalyst different from executive coaching?</p>
+  <p class="faq-a text-small">Traditional executive coaching is valuable but has three structural limitations. First, it requires 1&ndash;2 hours per month of scheduled time that executives routinely cancel. Second, skills practiced in a coaching session do not automatically transfer to the pressure of a real meeting&mdash;context collapse means leaders revert to default behaviors when stressed. Third, there is no continuous feedback loop. A 360 review happens quarterly at best.</p>
+  <p class="faq-a text-small">Catalyst solves all three. It requires zero scheduled time&mdash;nudges arrive in the leader's existing workflow. It delivers prompts at the exact moment of relevance&mdash;15 minutes before a specific meeting with a specific person. And it provides a continuous feedback loop through monthly team pulse surveys and Zoom meeting analysis that shows whether behavior is actually changing how the team experiences the leader.</p>
+  <p class="faq-a text-small">Catalyst is not a replacement for deep executive coaching&mdash;it is the daily reinforcement layer that makes development stick between formal coaching sessions, workshops, and reviews.</p>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 4</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 5 — Leader FAQs continued (3-5)                          -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+
+  <div class="section-label mt-0">Leader FAQs (Continued)</div>
+
+  <p class="faq-q">3. How much time does Catalyst require from me?</p>
+  <p class="faq-a text-small">At minimum settings: 30 seconds per week. You receive one email digest with one insight and one suggestion. That is it.</p>
+  <p class="faq-a text-small">At default settings: about 30 seconds per day. You receive 2&ndash;3 nudges per week, each one a single sentence with a specific behavior to try in an upcoming meeting. You respond with one tap: "Tried it," "Skip," or "Later."</p>
+  <p class="faq-a text-small">At maximum settings: under 5 minutes per day. You get daily nudges, post-meeting insights from Zoom AI Companion, the real-time in-meeting sidebar, and weekly analytics.</p>
+  <p class="faq-a text-small">If you want to go deeper on a specific situation&mdash;before a difficult conversation, after a challenging Mirror Moment, or when processing significant team feedback&mdash;you can open a Deep Coaching Session. This is an opt-in, conversational AI coaching interaction that typically lasts 5&ndash;15 minutes. It is there when you want it and never prompted unsolicited.</p>
+  <p class="faq-a text-small">You control this entirely through three dials in the app. You can change your settings at any time. If you get busy, the system detects it&mdash;if you skip three nudges in a row, Catalyst automatically goes quiet and sends a simple message: "We have quieted things down. Tap here whenever you are ready for more."</p>
+
+  <p class="faq-q">4. What if I am too busy? What if it feels overwhelming?</p>
+  <p class="faq-a text-small">This is the scenario we designed for first. Executives are the most time-constrained people in any organization. The absolute worst thing Catalyst can do is feel like another obligation.</p>
+  <p class="faq-a text-small">Seven safeguards are hard-coded into the system and cannot be overridden: a maximum of one nudge per day, quiet hours (no nudges before 8am or after 7pm), meeting density detection (if you have 4+ hours of back-to-back meetings, Catalyst goes silent), a cool-down period after every skip, a gradual onboarding ramp (one nudge in Week 1, two in Week 2, full cadence only by Week 4), seasonal awareness (quarter-end and board prep weeks automatically reduce to minimum), and a one-tap "Pause Everything" button that stops all nudges for one week, two weeks, or one month with no questions asked.</p>
+  <p class="faq-a text-small">Missing a nudge has zero consequences. There are no streaks that shame you. When you come back, Catalyst starts gently&mdash;a single, high-relevance nudge tied to a specific upcoming meeting. If you engage, frequency gradually returns to your previous setting.</p>
+
+  <p class="faq-q">5. How does the Zoom integration work?</p>
+  <p class="faq-a text-small">Catalyst integrates with Zoom in two ways.</p>
+  <p class="faq-a text-small"><strong>Post-Meeting Insights.</strong> After your meeting ends, Zoom's AI Companion generates a summary. Catalyst analyzes that summary for seven psychological safety signals: participation distribution (who spoke and who stayed silent), your question-to-statement ratio, whether dissent was present and acknowledged, whether contributions were attributed, whether concerns were addressed or dismissed, how much silence you allowed after questions, and whether one person dominated the agenda. You receive a single, specific coaching prompt within two hours&mdash;for example: "You spoke for 68% of the product review. Three team members did not contribute. In your next meeting, try: 'I would love to hear from everyone&mdash;Maya, what is your take?'"</p>
+  <p class="faq-a text-small"><strong>Real-Time In-Meeting Sidebar (optional).</strong> You can open a Catalyst sidebar visible only to you during a live Zoom call. It provides ambient, non-distracting cues&mdash;subtle color shifts and single-line prompts like "Pause after your next question" or "Alex has not spoken yet." You can pause it at any time with one tap. It never makes a sound. It never creates a popup. It is glanceable in under one second.</p>
+  <p class="faq-a text-small">Your Zoom data is processed in real-time and then discarded. Raw transcripts are never stored. Only aggregated, anonymized safety signal analysis is retained.</p>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 5</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 6 — Leader FAQs (6-8)                                    -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+
+  <div class="section-label mt-0">Leader FAQs (Continued)</div>
+
+  <p class="faq-q">6. Can my team see my data? Can HR?</p>
+  <p class="faq-a text-small">No. This is non-negotiable in our architecture.</p>
+  <p class="faq-a text-small">Your individual nudge responses, reflections, SCARF profile, and Mirror Moment data are never visible to anyone&mdash;not HR, not your manager, not organization admins, not Catalyst staff. Catalyst is a coaching tool, not a surveillance tool.</p>
+  <p class="faq-a text-small">Your team's pulse survey responses are anonymous. You see aggregated scores only. A minimum of three respondents is required before any results are displayed. No individual response is ever revealed.</p>
+  <p class="faq-a text-small">Data is encrypted at rest (AES-256) and in transit (TLS 1.3). SCARF profiles and pulse responses are encrypted with per-user keys. You can delete all your data at any time&mdash;immediate, complete destruction, not a soft delete.</p>
+  <p class="faq-a text-small">Catalyst is designed for GDPR, CCPA, SOC 2 Type II, and EU AI Act compliance.</p>
+
+  <p class="faq-q">7. How does the cascade model work?</p>
+  <p class="faq-a text-small">The cascade model is how Catalyst turns individual behavior change into organizational culture change.</p>
+  <p class="faq-a text-small">When you reach Stage 2 (typically around Week 7), you can invite your direct reports to begin their own Catalyst journey. They go through the same onboarding&mdash;SCARF assessment, team pulse survey, first micro-behavior selection&mdash;tailored to their context and their teams. When they reach Stage 2, they can invite their direct reports. And so on.</p>
+  <p class="faq-a text-small">As the cascade grows, you unlock an organization dashboard showing safety scores across your entire leadership tree. You can see which teams are thriving and which are at risk&mdash;without ever seeing any individual leader's private coaching data.</p>
+  <p class="faq-a text-small">This is how culture propagates. Research shows that when a leader models psychologically safe behavior, their direct reports learn by observation and begin replicating those behaviors with their own teams. Catalyst makes this process intentional and measurable instead of leaving it to chance.</p>
+
+  <p class="faq-q">8. What research is Catalyst based on?</p>
+  <p class="faq-a text-small">Catalyst is built on the convergence of five validated research streams:</p>
+  <ul class="text-small">
+    <li><strong>Psychological safety research.</strong> Amy Edmondson's foundational work (51 work teams, 1999; 136-sample meta-analysis, 22,000+ individuals). Google's Project Aristotle (180+ teams). Timothy Clark's 4 Stages framework.</li>
+    <li><strong>Neuroscience.</strong> David Rock's SCARF model and the NeuroLeadership Institute's research showing the brain processes social threats using the same circuits as physical threats (Lieberman, 2013).</li>
+    <li><strong>Behavioral economics.</strong> Thaler and Sunstein's Nudge Theory. A 2024 field experiment with 226 Danish managers and 4,442 employees proved that nudges combined with training significantly outperform training alone.</li>
+    <li><strong>Habit science.</strong> BJ Fogg's Tiny Habits (behavior = motivation + ability + prompt) and James Clear's Atomic Habits. Optimal structure: existing habit + tiny new behavior + immediate reinforcement.</li>
+    <li><strong>Learning science.</strong> The NeuroLeadership Institute's AGES model (Attention, Generation, Emotion, Spacing). Traditional training fails on three of four conditions. Catalyst's spaced, contextual, reflective approach satisfies all four.</li>
+  </ul>
+  <p class="faq-a text-small">Field validation from Humu/Perceptyx (founded by former Google CHRO Laszlo Bock) demonstrates 8&ndash;12 point improvements in manager effectiveness scores within six months using nudge-based approaches, with 95% sustained engagement.</p>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 6</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 7 — Leader FAQ 9 (Google, Microsoft, Pixar, Healthcare)  -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+
+  <div class="section-label mt-0">Leader FAQs (Continued)</div>
+
+  <p class="faq-q">9. What did Google, Microsoft, and Pixar actually do? What can we learn from them?</p>
+  <p class="faq-a text-small">The organizations most often cited for psychological safety did not just study it&mdash;they built concrete mechanisms to sustain it. Here is what they did and what we can learn.</p>
+
+  <h4>Google &mdash; Project Aristotle (2012&ndash;2016)</h4>
+  <p class="faq-a text-small">Google's People Operations team studied 180+ teams over two years, conducting 200+ interviews and analyzing 250+ team attributes. The most surprising finding: <strong>who was on the team mattered far less than how the team worked together.</strong> Individual talent, seniority, co-location, team size, and personality mix did not predict team effectiveness. Group norms did.</p>
+  <p class="faq-a text-small">They identified five dynamics of effective teams, ranked by importance:</p>
+  <ol class="text-small">
+    <li><strong>Psychological safety</strong>&mdash;Can I take risks without feeling insecure or embarrassed?</li>
+    <li><strong>Dependability</strong>&mdash;Do teammates follow through reliably?</li>
+    <li><strong>Structure &amp; clarity</strong>&mdash;Are roles, plans, and goals clear?</li>
+    <li><strong>Meaning</strong>&mdash;Does the work feel personally significant?</li>
+    <li><strong>Impact</strong>&mdash;Does my work make a difference?</li>
+  </ol>
+  <p class="faq-a text-small">Psychological safety was number one because it underpins the other four&mdash;without it, people will not flag missed deadlines (dependability), ask clarifying questions (clarity), express what matters to them (meaning), or voice ideas about impact.</p>
+  <p class="faq-a text-small">Two team norms stood out: <strong>equality in conversational turn-taking</strong> (everyone spoke roughly the same amount) and <strong>high social sensitivity</strong> (members could read how others felt from tone and body language).</p>
+
+  <p class="faq-a text-small"><strong>How Google operationalized it:</strong></p>
+  <ul class="text-small">
+    <li><strong>The gTeams exercise:</strong> A structured intervention used by 3,000+ Googlers across 300+ teams. It included a 10-minute pulse survey measuring the five dynamics, a summary report, a facilitated team conversation, and tailored action plans. Teams reported that simply having a framework and a forcing function to discuss dynamics was the most impactful part.</li>
+    <li><strong>Manager Actions for Psychological Safety:</strong> A published guide organized into three categories&mdash;Demonstrate Engagement (be present, recap what you heard, solicit input from quiet members), Show Understanding (validate emotions, avoid blame language, do not interrupt), and Show Confidence (invite dissent, respond non-defensively to criticism, model vulnerability by discussing your own mistakes).</li>
+    <li><strong>Integration into Project Oxygen:</strong> Google's manager competency model was updated in 2018 to explicitly include "Creates an inclusive team environment, showing concern for success and well-being" as a core behavior&mdash;embedding psychological safety into how every manager at Google is evaluated.</li>
+    <li><strong>Published everything publicly</strong> on the re:Work platform (rework.withgoogle.com) so any organization could use their tools, survey questions, and discussion guides.</li>
+  </ul>
+  <p class="faq-a text-small">Teams that adopted new norms (like sharing a risk taken each week at the start of meetings) improved 6% on psychological safety ratings and 10% on structure and clarity. Sales teams scoring high on the five dynamics exceeded revenue targets by 17%, while low-scoring teams fell short by 19%.</p>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 7</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 8 — Microsoft, Pixar, Healthcare, pattern                -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+
+  <h4 class="mt-0">Microsoft &mdash; The Growth Mindset Transformation (2014&ndash;present)</h4>
+  <p class="faq-a text-small">When Satya Nadella became CEO in 2014, Microsoft's internal culture was defined by stack ranking&mdash;a system that forced managers to label a fixed percentage of employees as underperformers, creating sabotage, knowledge hoarding, and internal competition.</p>
+  <p class="faq-a text-small"><strong>Concrete mechanisms Microsoft implemented:</strong></p>
+  <ul class="text-small">
+    <li><strong>Eliminated stack ranking</strong> and replaced annual reviews with continuous "Connects"&mdash;development-focused check-ins evaluating three dimensions: Key Individual Accomplishments, Contributions to the Success of Others, and Results Built on the Work of Others. The last two explicitly reward collaboration and humility.</li>
+    <li><strong>"Model, Coach, Care" manager framework:</strong> Model growth mindset behaviors, actively coach and develop your people, create environments that prioritize well-being and psychological safety.</li>
+    <li><strong>Cultural language shift:</strong> Nadella reframed Microsoft from "know-it-all" to "learn-it-all" culture, inspired by Carol Dweck's growth mindset research. This language was embedded in learning programs, performance management, and business reviews.</li>
+    <li><strong>Company-wide hackathons</strong> encouraging experimentation and risk-taking without fear of failure.</li>
+  </ul>
+  <p class="faq-a text-small">The result: a 22% increase in employee confidence around psychological safety, and a market capitalization increase from $300 billion to over $2.4 trillion during the transformation.</p>
+
+  <h4>Pixar &mdash; The Braintrust (1999&ndash;present)</h4>
+  <p class="faq-a text-small">Created during the troubled production of Toy Story 2, formalized by co-founder Ed Catmull as described in <em>Creativity, Inc.</em> The Braintrust meets to watch early, unfinished cuts of films and give honest feedback.</p>
+  <p class="faq-a text-small"><strong>The core rules that make it work:</strong></p>
+  <ul class="text-small">
+    <li>Feedback is about the project, never the person</li>
+    <li>The Braintrust identifies problems but <strong>does not prescribe solutions</strong></li>
+    <li><strong>The director owns the final decision</strong>&mdash;the Braintrust has no authority to mandate changes</li>
+    <li>Feedback must come from empathy, not ego</li>
+    <li>Directors share deliberately rough, unfinished work&mdash;normalizing imperfection and making vulnerability safe</li>
+  </ul>
+  <p class="faq-a text-small">Catmull convinced Steve Jobs not to attend Braintrust meetings because his dominant presence would undermine candor. He described his primary role as ensuring the compact of the Braintrust is "protected and upheld"&mdash;because the blocks to candor always reassert themselves and must be addressed continuously. The result: 27 consecutive profitable films, unprecedented in entertainment history.</p>
+
+  <h4>Healthcare &mdash; Structural Mechanisms for Speaking Up</h4>
+  <p class="faq-a text-small">Virginia Mason Medical Center adapted the Toyota Production System to create a Patient Safety Alert system: any employee who encounters a situation likely to harm a patient must report immediately and cease the activity. By 2006, over 6,100 reports had been filed&mdash;44% from nurses, 23% from nonclinical staff, 8% from physicians. A pivotal moment came when a nurse stopped a physician who was not following protocol; the chief publicly validated the nurse and made clear that leadership would support anyone who acted in patients' best interests. Word spread rapidly.</p>
+
+  <h4>The pattern across all of these organizations:</h4>
+  <ol class="text-small">
+    <li>They measured it explicitly and repeatedly&mdash;not once, but continuously</li>
+    <li>They gave leaders concrete behaviors, not abstract values</li>
+    <li>They built structural mechanisms (gTeams, Connects, Braintrust rules, Patient Safety Alerts) that force the right conversations to happen</li>
+    <li>Senior leaders modeled vulnerability first</li>
+    <li>They treated it as a never-finished discipline, not a one-time initiative</li>
+  </ol>
+  <p class="faq-a text-small">This is exactly what Catalyst operationalizes: measure the gap, deliver the specific behavior at the moment it matters, re-measure, and sustain the discipline over time.</p>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 8</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 9 — Leader FAQs 10-12                                    -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+
+  <div class="section-label mt-0">Leader FAQs (Continued)</div>
+
+  <p class="faq-q">10. What results can I expect?</p>
+  <p class="faq-a text-small">Based on the underlying research and field data from nudge-based coaching platforms:</p>
+  <ul class="text-small">
+    <li><strong>Within 2&ndash;3 weeks:</strong> Your team will begin to notice behavioral shifts&mdash;leaders who start asking genuine questions and waiting for answers create a perceptible difference quickly.</li>
+    <li><strong>Within 6&ndash;8 weeks:</strong> Neural pathway rewiring begins. Practiced micro-behaviors start becoming automatic rather than effortful.</li>
+    <li><strong>Within 12 weeks:</strong> Measurable team safety score improvements. Humu/Perceptyx data shows 8&ndash;12 point improvements in manager effectiveness scores in this timeframe.</li>
+    <li><strong>Within 6 months:</strong> Compounding effects. Teams with high psychological safety show 50% higher productivity, 31% more innovation, 27% less turnover, and 76% more engagement. Retention effects are 4&ndash;6x stronger for underrepresented groups (BCG, 28,000 professionals).</li>
+    <li><strong>Within 12 months:</strong> Cascade effects as your direct reports begin their own journeys. Organizational culture shift becomes measurable.</li>
+  </ul>
+  <p class="faq-a text-small">The compounding effects are significant. Research from BCG shows that when a single senior leader improves their team's psychological safety, the ripple effects extend beyond their immediate reports&mdash;their direct reports begin modeling the same behaviors with their own teams. This is what makes the cascade model so powerful: one leader's development investment multiplies across the organization.</p>
+
+  <p class="faq-q">11. What platforms does Catalyst integrate with?</p>
+  <p class="faq-a text-small">Catalyst integrates with the tools leaders already use:</p>
+  <ul class="text-small">
+    <li><strong>Slack</strong>&mdash;Nudge delivery and one-tap responses</li>
+    <li><strong>Microsoft Teams</strong>&mdash;Nudge delivery and one-tap responses</li>
+    <li><strong>Zoom</strong>&mdash;Post-meeting AI Companion analysis and optional real-time in-meeting sidebar</li>
+    <li><strong>Google Calendar / Outlook</strong>&mdash;Calendar-aware nudge timing (pre-meeting and post-meeting triggers)</li>
+    <li><strong>Email</strong>&mdash;Weekly digest and pulse survey delivery</li>
+    <li><strong>Mobile (iOS and Android)</strong>&mdash;Push notifications for calendar-triggered nudges; full app experience</li>
+  </ul>
+  <p class="faq-a text-small">Each channel is independently toggleable. Leaders choose where they want to be reached and can change their channel mix at any time.</p>
+
+  <p class="faq-q">12. How do I get started?</p>
+  <p class="faq-a text-small">Three steps, eight minutes total:</p>
+  <ol class="text-small">
+    <li><strong>Complete the SCARF Quick Assessment</strong> through the Catalyst portal (3 minutes&mdash;five sliders that map your leadership profile across five neuroscience domains).</li>
+    <li><strong>Send the baseline pulse survey</strong> to your direct reports (Catalyst handles delivery&mdash;your team members spend 2 minutes answering Edmondson's validated 7-item survey anonymously).</li>
+    <li><strong>Pick your first micro-behavior</strong> from a curated card deck and connect your preferred channels (Slack, Teams, Zoom, email, calendar).</li>
+  </ol>
+  <p class="faq-a text-small">Your first nudge arrives 2&ndash;3 days later, timed to your first relevant meeting. Baseline pulse results come in within 48&ndash;72 hours, and your first Mirror Moment lands at Week 4.</p>
+  <p class="faq-a text-small">Reach out to your L&amp;D team or visit the Catalyst portal through your organization's internal tools to begin.</p>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 9</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 10 — Program Design FAQs (1-2)                           -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+
+  <div class="section-label mt-0">Program Design FAQs</div>
+
+  <p class="faq-q">1. Why build this now?</p>
+  <p class="faq-a text-small">Four converging forces make this the right moment:</p>
+  <p class="faq-a text-small">First, the urgency of the current environment. AI is disrupting how work gets done at an unprecedented pace&mdash;over 244,000 tech workers were laid off in 2025 alone, and more than 40% of workers report AI-induced anxiety. Reductions in force across major industries have eroded trust. Remote and hybrid work has eliminated the informal cues that once surfaced concerns. Broader sociopolitical tension is creating anxiety that follows people into the workplace. The net result is that teams are more likely to self-censor at precisely the moment organizations need candor most. Psychological safety has shifted from a "nice-to-have" cultural value to a prerequisite for organizational survival.</p>
+  <p class="faq-a text-small">Second, the AI imperative. The MIT/Infosys 2025 report found that 83% of leaders say psychological safety directly impacts the success of AI initiatives, yet only 39% rate their organization's safety as "high." Organizations undergoing AI transformation need teams that can challenge assumptions, surface concerns about new technology, and experiment without fear. Twenty-five percent of leaders have hesitated to even propose AI projects due to fear of how they would be received.</p>
+  <p class="faq-a text-small">Third, the technology enablement. Zoom's AI Companion APIs, real-time media streaming, and AI-powered personalization capabilities did not exist two years ago. These make it possible for the first time to deliver coaching that is tied to actual meeting behavior rather than generic advice.</p>
+  <p class="faq-a text-small">Fourth, the approach gap. Existing leadership development tools either measure (surveys), coach (scheduled sessions), or train (workshops). None close the full loop: measure the gap, nudge the behavior at the moment it matters, re-measure the impact, and cascade the change through the organization. And none are designed for the specific constraints of senior leaders: less time, higher stakes, stronger ego-protective instincts.</p>
+
+  <p class="faq-q">2. What is the organizational impact potential?</p>
+  <p class="faq-a text-small">The impact of psychological safety on organizational performance is well-documented across multiple research streams:</p>
+  <ul class="text-small">
+    <li><strong>Team performance:</strong> Google's Project Aristotle found psychologically safe teams are 2.5x more likely to be rated high-performing by executives. Teams with high psychological safety show 50% higher productivity, 31% more innovation, and 76% more engagement.</li>
+    <li><strong>Talent retention:</strong> BCG's study of 28,000 professionals found that attrition risk drops to 3% (from 12%) in psychologically safe teams, with retention effects 4&ndash;6x stronger for underrepresented groups&mdash;making this one of the most powerful levers for DEI outcomes.</li>
+    <li><strong>AI transformation readiness:</strong> MIT/Infosys 2025 found that 83% of leaders say psychological safety directly impacts the success of AI initiatives, yet only 39% rate their organization's safety as "high." Organizations whose teams can challenge assumptions and experiment without fear will out-adapt those whose teams stay silent.</li>
+    <li><strong>Cascade multiplier:</strong> When one senior leader improves, the behavior modeling effect propagates to their direct reports' teams. A single VP who reaches Stage 2 can catalyze development across 30&ndash;100+ people in their reporting chain.</li>
+  </ul>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 10</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 11 — Program Design FAQs (3-4)                           -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+
+  <div class="section-label mt-0">Program Design FAQs (Continued)</div>
+
+  <p class="faq-q">3. How does Catalyst compare to existing leadership development approaches?</p>
+  <p class="faq-a text-small">No existing approach offers the full combination of executive-specific design, SCARF-informed personalization, in-workflow nudges, meeting intelligence, and cascade propagation. Here is how Catalyst differs from common alternatives:</p>
+
+  <table>
+    <tr><th>Approach</th><th>What It Does</th><th>How Catalyst Differs</th></tr>
+    <tr><td><strong>Survey platforms</strong> (Culture Amp, Perceptyx)</td><td>Measure engagement and safety</td><td>Catalyst measures AND coaches&mdash;closing the loop between insight and behavior change</td></tr>
+    <tr><td><strong>Traditional executive coaching</strong></td><td>1:1 sessions with a coach</td><td>Catalyst reinforces coaching daily in the flow of work&mdash;no scheduled sessions, no context collapse</td></tr>
+    <tr><td><strong>AI coaching chatbots</strong> (BetterUp, CoachHub)</td><td>On-demand chat-based coaching</td><td>Catalyst pushes nudges at the moment of relevance&mdash;leaders do not need to remember to engage</td></tr>
+    <tr><td><strong>Nudge platforms</strong> (Humu)</td><td>Behavioral nudges at scale</td><td>Catalyst adds SCARF personalization, meeting context, Zoom intelligence, and cascade propagation</td></tr>
+    <tr><td><strong>NILES</strong> (NeuroLeadership Institute)</td><td>AI leadership coach built on neuroscience</td><td>Shares SCARF foundation but is broad-purpose; requires leader-initiated chat, no team measurement, no meeting context, no cascade</td></tr>
+    <tr><td><strong>Pre-meeting nudge tools</strong> (Cloverleaf)</td><td>Assessment-based nudges</td><td>No SCARF model, no cascade mechanism, no Zoom AI Companion integration</td></tr>
+  </table>
+
+  <p class="faq-a text-small"><strong>NILES deserves special attention</strong> because it is the closest tool to Catalyst's neuroscience-grounded philosophy. Built by the NeuroLeadership Institute (founded by David Rock, creator of the SCARF model that also underpins Catalyst), NILES draws on 60+ peer-reviewed papers. However, NILES is a general-purpose leadership coaching tool, not a psychological safety platform. It requires the leader to initiate every interaction, does not integrate with meeting tools for contextual nudges, does not measure team psychological safety, and does not include a cascade mechanism. Catalyst builds on the same neuroscience foundation but closes the loop: measure the gap, nudge the behavior at the moment it matters, re-measure the impact, and cascade the change through the organization.</p>
+
+  <p class="faq-a text-small">Catalyst's unique approach: the Zoom AI Companion integration (post-meeting contextual nudges + real-time sidebar), the cascade model, the closed-loop measure-nudge-remeasure architecture, and the executive-specific invisible coaching philosophy.</p>
+
+  <p class="faq-q">4. What is the MVP scope?</p>
+  <p class="faq-a text-small">The MVP focuses on proving the core loop&mdash;Assess, Nudge, Measure&mdash;for a single leader:</p>
+  <p class="faq-a text-small"><strong>In scope for MVP:</strong></p>
+  <ul class="text-small">
+    <li>Cross-platform mobile app (iOS and Android): onboarding, SCARF assessment, home dashboard, nudge library, settings/dials</li>
+    <li>Slack integration: pre-meeting nudge delivery and one-tap response capture</li>
+    <li>Email weekly digest</li>
+    <li>Baseline team pulse survey (Edmondson's 7-item scale) with anonymous aggregation</li>
+    <li>AI-powered nudge personalization using SCARF profile and calendar context</li>
+    <li>Calendar integration for meeting-aware nudge timing</li>
+    <li>First Mirror Moment at Week 4</li>
+    <li>The three dials (frequency, depth, channels) with auto-adjustment on skips</li>
+  </ul>
+  <p class="faq-a text-small"><strong>Deferred to V2:</strong></p>
+  <ul class="text-small">
+    <li>Microsoft Teams integration</li>
+    <li>Zoom AI Companion post-meeting analysis</li>
+    <li>Zoom real-time in-meeting sidebar</li>
+    <li>Cascade model and organization dashboard</li>
+    <li>Peer cohort facilitation</li>
+    <li>Mobile push notifications</li>
+    <li>Deep Coaching Sessions</li>
+  </ul>
+  <p class="faq-a text-small">This scoping lets us validate the core hypothesis&mdash;that contextual micro-behavior nudges change leader behavior and improve team safety scores&mdash;before investing in the more complex integrations.</p>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 11</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 12 — Program Design FAQs (5-6)                           -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+
+  <div class="section-label mt-0">Program Design FAQs (Continued)</div>
+
+  <p class="faq-q">5. What is the technical approach?</p>
+  <p class="faq-a text-small">Catalyst's architecture follows four technical design principles:</p>
+  <ol class="text-small">
+    <li><p><strong>Privacy-first data architecture.</strong> All executive coaching data is encrypted at rest and in transit, with per-user encryption keys. The system enforces strict data sovereignty&mdash;individual nudge responses, reflections, and SCARF profiles are never accessible to anyone other than the executive. Pulse survey responses are anonymized with a minimum respondent threshold before results are displayed.</p></li>
+    <li><p><strong>Multi-channel delivery.</strong> The platform delivers nudges through a unified backend that connects to Slack, Microsoft Teams, Zoom, email, and mobile push. Each channel adapter is independent, allowing new channels to be added without affecting the core system. Leaders choose where they want to be reached.</p></li>
+    <li><p><strong>AI-powered personalization.</strong> Claude AI generates contextual, personalized nudges by combining the leader's SCARF profile, current stage, behavior history, upcoming calendar context, and (when connected) Zoom meeting analysis. This is not a template library&mdash;every nudge is generated for a specific leader in a specific moment.</p></li>
+    <li><p><strong>Calendar-aware intelligence.</strong> The system integrates with Google Calendar and Outlook to detect meeting density, upcoming 1:1s, team meetings, and quiet periods. This enables pre-meeting nudges timed to specific conversations, automatic quiet periods during back-to-back meeting days, and seasonal awareness during high-stress periods like quarter-end.</p></li>
+  </ol>
+  <p class="faq-a text-small">The working prototype includes a cross-platform mobile app (iOS and Android), Slack and Teams integration, email delivery, calendar-aware nudge scheduling, and AI-powered personalization. Zoom AI Companion integration for post-meeting analysis and the real-time in-meeting sidebar are planned for V2.</p>
+
+  <p class="faq-q">6. How do we measure success?</p>
+
+  <p class="faq-a text-small"><strong>Product metrics (leading indicators):</strong></p>
+  <ul class="text-small">
+    <li>Onboarding completion rate (target: &gt;80%)</li>
+    <li>Nudge engagement rate&mdash;percentage of nudges that receive a "Tried it" response (target: &gt;40%)</li>
+    <li>Weekly active usage&mdash;leaders who engage with at least one nudge per week (target: &gt;65%)</li>
+    <li>Auto-dial-down rate&mdash;percentage of leaders whose nudges are automatically reduced due to skipping (target: &lt;20%)</li>
+    <li>Mirror Moment open rate (target: &gt;75%)</li>
+    <li>Team pulse survey response rate (target: &gt;70% of invited team members)</li>
+  </ul>
+
+  <p class="faq-a text-small"><strong>Outcome metrics (lagging indicators):</strong></p>
+  <ul class="text-small">
+    <li>Team safety score improvement from baseline (target: +8 points within 12 weeks, consistent with Humu/Perceptyx data)</li>
+    <li>Micro-behavior practice frequency (target: 2&ndash;3 per week per leader)</li>
+    <li>Leader satisfaction score (target: &gt;80% would recommend to peers)</li>
+    <li>Perception gap reduction between leaders and their teams</li>
+  </ul>
+
+  <p class="faq-a text-small"><strong>Organizational impact metrics:</strong></p>
+  <ul class="text-small">
+    <li>Leader retention in program at 6 months (target: &gt;70%)</li>
+    <li>Cascade adoption rate&mdash;percentage of leaders who invite direct reports at Stage 2 (target: &gt;30%)</li>
+    <li>Organization-wide safety score trend (measured quarterly)</li>
+    <li>Cross-functional team performance indicators (innovation output, retention, engagement)</li>
+  </ul>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 12</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 13 — Program Design FAQs (7-8)                           -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+
+  <div class="section-label mt-0">Program Design FAQs (Continued)</div>
+
+  <p class="faq-q">7. What are the biggest risks?</p>
+
+  <table>
+    <tr><th>Risk</th><th>Likelihood</th><th>Impact</th><th>Mitigation</th></tr>
+    <tr><td><strong>Executives disengage after Week 1</strong></td><td>High</td><td>Critical</td><td>The Dial System defaults to Gentle. Auto-reduce on skips. The first Mirror Moment at Week 4 is specifically designed as the "hook"&mdash;the emotional moment that converts curiosity to commitment. Everything before Week 4 is about earning that moment.</td></tr>
+    <tr><td><strong>"This feels like surveillance"</strong></td><td>Medium</td><td>Critical</td><td>Privacy architecture is the foundation, not a feature. Executive data sovereignty. No admin visibility into individual data. Coaching framing throughout&mdash;"become a better leader," never "we are monitoring you."</td></tr>
+    <tr><td><strong>Nudges feel generic</strong></td><td>Medium</td><td>High</td><td>AI personalization uses SCARF profile + meeting context + behavior history + stage. Zoom AI Companion data makes nudges tied to actual meetings. If personalization quality drops, engagement collapses&mdash;this is the core product risk we must get right.</td></tr>
+    <tr><td><strong>Team members do not respond to pulse surveys</strong></td><td>Medium</td><td>High</td><td>Surveys are 2 minutes (7 items). Anonymous. Delivered via the channel they already use. One reminder after 48 hours. Minimum 3 responses to display results. Frame as "help your leader grow," not "rate your boss."</td></tr>
+    <tr><td><strong>Zoom integration approval delay</strong></td><td>High</td><td>Medium</td><td>Real-time sidebar is deferred to V2. Post-meeting nudges use standard Zoom API access (lower approval barrier). We ship the full product without Zoom and add it as an expansion.</td></tr>
+    <tr><td><strong>Feature creep</strong></td><td>High</td><td>Medium</td><td>The design document is the scope contract. The Dial System means we can launch with Gentle + Essentials as the default and build deeper features only as engagement data warrants.</td></tr>
+    <tr><td><strong>Executive ego resistance</strong></td><td>Medium</td><td>High</td><td>Never frame as remediation. "Close the gap" not "fix your behavior." Peer benchmarking normalizes growth. Social proof: "73% of executives in your cohort are practicing this week." Framing is aspirational: the best leaders are the ones who keep growing.</td></tr>
+  </table>
+
+  <p class="faq-q">8. What is the internal rollout strategy?</p>
+
+  <p class="faq-a text-small"><strong>Phase 1 &mdash; Pilot cohort (Months 1&ndash;3):</strong></p>
+  <ul class="text-small">
+    <li>Identify 10&ndash;15 senior leaders who are already invested in team development and open to new approaches.</li>
+    <li>Run a 12-week pilot with weekly check-ins to gather feedback and refine the experience.</li>
+    <li>Focus on proving the core loop: leaders engage with nudges, team safety scores improve.</li>
+  </ul>
+
+  <p class="faq-a text-small"><strong>Phase 2 &mdash; Validate and iterate (Months 4&ndash;6):</strong></p>
+  <ul class="text-small">
+    <li>Measure pilot outcomes: team safety score improvements, leader engagement rates, qualitative feedback.</li>
+    <li>Share anonymized, aggregated results with leadership to build organizational support.</li>
+    <li>Refine nudge quality, timing, and personalization based on pilot data.</li>
+  </ul>
+
+  <p class="faq-a text-small"><strong>Phase 3 &mdash; Expand through cascade (Months 6&ndash;9):</strong></p>
+  <ul class="text-small">
+    <li>Pilot leaders who reach Stage 2 invite their direct reports to begin their own Catalyst journey.</li>
+    <li>The cascade model is the organic growth mechanism&mdash;each leader who succeeds creates pull from the next level down.</li>
+    <li>L&amp;D team supports onboarding of new cohorts with lightweight facilitation.</li>
+  </ul>
+
+  <p class="faq-a text-small"><strong>Phase 4 &mdash; Organization-wide adoption (Months 9&ndash;12):</strong></p>
+  <ul class="text-small">
+    <li>Expanded platform integrations (Zoom AI Companion, additional channels).</li>
+    <li>HRIS integration for automated onboarding of newly promoted leaders.</li>
+    <li>Organization-wide culture analytics and leadership development dashboards.</li>
+  </ul>
+
+  <p class="faq-a text-small">The cascade model creates organic, pull-based adoption. Each leader who develops their team creates visible results that inspire their peers and direct reports to join.</p>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 13</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 14 — Program Design FAQs (9-10), closing note            -->
+<!-- ============================================================ -->
+<div class="page">
+
+  <div class="section-label mt-0">Program Design FAQs (Continued)</div>
+
+  <p class="faq-q">9. What are the product design principles?</p>
+  <p class="faq-a text-small">Catalyst's design is governed by five principles:</p>
+  <ol class="text-small">
+    <li><p><strong>Executive-grade aesthetics.</strong> Think Bloomberg Terminal meets Calm app. No gamification, no cartoons, no confetti. Sophisticated, warm, data-rich. Every data visualization is framed as "opportunity" not "deficiency."</p></li>
+    <li><p><strong>Radically minimal.</strong> One primary action per screen. White space is a feature. If the screen feels busy, remove elements. Any screen should be understood in under five seconds.</p></li>
+    <li><p><strong>Invisible by default.</strong> The app is the brain (onboarding, settings, dashboard, Mirror Moments) while integrations with Slack, Teams, Zoom, and email are the hands. Most leaders interact with Catalyst primarily through tools they already use. The app is there when they want depth&mdash;but it never demands their attention.</p></li>
+    <li><p><strong>Warm authority.</strong> The app should feel like a trusted advisor&mdash;confident but not cold, data-driven but human. Peer-level tone, never instructional. "High-performing leaders often..." not "You should try..."</p></li>
+    <li><p><strong>Cross-platform from day one.</strong> Executive leaders use iPhones and Android devices. The app is built for both platforms from a single codebase, with a card-based interface optimized for nudge cards, SCARF assessment sliders, dashboard metrics, and Mirror Moment comparisons. Over-the-air updates allow rapid iteration on nudge content and interaction patterns without app store review cycles.</p></li>
+  </ol>
+
+  <p class="faq-q">10. What is the 12-month roadmap?</p>
+
+  <table>
+    <tr><th>Quarter</th><th>Focus</th><th>Key Deliverables</th></tr>
+    <tr><td><strong>Q1</strong><br>(Months 1&ndash;3)</td><td>Core loop + pilot</td><td>Mobile app (onboarding, dashboard, nudge library, dials), Slack integration, email digest, calendar integration, AI-powered nudge personalization, baseline pulse survey, first Mirror Moment. Pilot cohort onboarded.</td></tr>
+    <tr><td><strong>Q2</strong><br>(Months 4&ndash;6)</td><td>Validate outcomes</td><td>Teams integration, mobile push notifications, peer cohort v1 (facilitated learning circles), post-meeting nudges via Zoom AI Companion, Deep Coaching Sessions, second pulse survey and trend tracking. Pilot results measured and shared.</td></tr>
+    <tr><td><strong>Q3</strong><br>(Months 7&ndash;9)</td><td>Cascade + deepen</td><td>Cascade model (invite direct reports, organization dashboard, safety heatmap), Zoom real-time in-meeting sidebar, advanced AI personalization (meeting history patterns, multi-behavior stacking), scenario-based nudges. Second wave of leaders onboarded through cascade.</td></tr>
+    <tr><td><strong>Q4</strong><br>(Months 10&ndash;12)</td><td>Scale across org</td><td>HRIS integrations for auto-enrollment of new leaders, mentor role for Stage 4 leaders, organization-wide culture analytics, leadership development reporting. Target: broad adoption across leadership levels.</td></tr>
+  </table>
+
+  <p class="faq-a text-small">The roadmap is sequenced to validate assumptions before scaling complexity. Q1 proves that leaders engage with micro-behavior nudges. Q2 proves that engagement produces measurable team outcomes. Q3 proves that cascade propagation works. Q4 scales what works across the organization.</p>
+
+  <div class="divider"></div>
+
+  <p class="text-xs" style="color: var(--text-muted); font-style: italic;">This document follows the Amazon PR/FAQ format. The press release describes the product as if it has launched. The FAQs address the most important questions from leaders enrolling in the program and from the team designing and building it. All statistics and research references are drawn from validated sources including: Perceptyx 2025 Benchmark, Wiley Psychological Safety Survey, Gallup State of the Global Workplace (2024), BCG 2024 Study (28,000 professionals), MIT/Infosys 2025 Report, Google Project Aristotle (2012&ndash;2016), Edmondson (1999), Frazier et al. (2017) meta-analysis, and the NeuroLeadership Institute. Full citations are maintained in the project research files.</p>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 14</span>
+</div>
+
+</body>
+</html>
