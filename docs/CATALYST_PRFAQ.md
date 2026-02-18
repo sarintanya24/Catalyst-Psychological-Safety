@@ -6,17 +6,25 @@
 
 ### AI-Powered Invisible Coaching Platform Helps Executive Leaders Build Psychologically Safe Teams -- Without Adding a Single Meeting to Their Calendar
 
-**Catalyst delivers personalized micro-behavior nudges in the tools leaders already use, closing the 40-point perception gap between how executives think their teams feel and how they actually feel.**
+**Catalyst delivers personalized micro-behavior nudges in the tools leaders already use, closing the perception gap between how executives think their teams feel and how they actually feel.**
 
 **San Francisco, CA -- February 18, 2026**
 
-Ninety-three percent of executives believe their teams feel psychologically safe at work. Only 53% of individual contributors agree. That 40-point gap is the most dangerous blind spot in modern leadership -- and it is costing the global economy $8.8 trillion a year in lost productivity from disengaged workers.
+Eighty-seven percent of executives report positive perceptions of psychological safety at work. Only 69% of individual contributors say the same -- and just 53% of individual contributors feel safe taking risks in their organizations.[^1] That perception gap is the most dangerous blind spot in modern leadership -- and it is costing the global economy $8.8 trillion a year in lost productivity from disengaged workers (Gallup, State of the Global Workplace).
+
+[^1]: The executive-frontline perception gap is documented across multiple studies. Perceptyx's 2025 Benchmark found 87% of executives vs. 69% of individual contributors report positive psychological safety perceptions, with hourly workers at just 66%. Wiley's survey found an even starker gap on risk-taking: only 53% of individual contributors feel safe taking risks, compared to 76% of executives. Both studies confirm that the higher a leader rises, the less accurately they perceive their team's experience.
 
 Today, Catalyst launches the first AI-powered coaching platform purpose-built for executive leaders. Instead of workshops that people forget within a week, Catalyst delivers one small, specific behavior prompt at the exact moment it matters -- right before a meeting, right after a decision, right when a leader's team needs them most. The entire experience takes 30 seconds a day.
+
+**The need has never been more urgent.**
+
+The current environment is making psychological safety harder to maintain -- and more critical than ever. AI is disrupting how work gets done, creating uncertainty and fear of replacement; over 244,000 tech workers were laid off in 2025 alone, and more than 40% of workers report some form of AI-induced anxiety. Reductions in force across major organizations have eroded trust and signaled to remaining employees that speaking up carries risk. Remote and hybrid work has made it harder for leaders to read the room -- the informal hallway conversations and body language cues that once surfaced concerns have disappeared. Meanwhile, broader sociopolitical tension is creating anxiety that follows people into the workplace. The net result: teams are more likely to self-censor and less likely to speak up at precisely the moment organizations need candor and adaptability most. This is the burning platform. In the age of AI transformation, the organizations whose teams can challenge assumptions, surface concerns, and experiment without fear will out-adapt everyone else. Those whose teams stay silent will not.
 
 **The problem is not awareness. The problem is behavior change.**
 
 Executives already know that psychological safety matters. Google's Project Aristotle proved it is the number one predictor of team performance across 180+ teams. Boeing's 346 deaths, Nokia's $143 billion in lost market cap, and Wells Fargo's $3 billion in fines all trace back to cultures where people were afraid to speak up. The research is settled. What is missing is a mechanism that actually changes how leaders behave day to day.
+
+**The world's best organizations already know this.** Google's Project Aristotle -- a landmark study of 180+ teams -- found that psychological safety is the single most important factor distinguishing high-performing teams, with those teams 2.5x more likely to be rated as high-performing by executives. Microsoft's transformation under Satya Nadella, which shifted the company from a "know-it-all" to a "learn-it-all" culture using Carol Dweck's growth mindset framework, coincided with a market capitalization increase from $300 billion to over $2.4 trillion -- and a 22% increase in employee confidence around psychological safety. Pixar's Braintrust model -- where directors receive candid feedback with no authority to mandate changes -- has produced 27 consecutive profitable films, unprecedented in entertainment history. In healthcare, a 2024 systematic review found significant positive relationships between team psychological safety and patient safety outcomes, validating Edmondson's original hospital research where "better" teams reported more errors because they felt safe doing so. These organizations did not stumble into psychological safety. They invested in it deliberately. What they lack -- and what every organization lacks -- is a scalable mechanism to build it leader by leader, day by day.
 
 The current market does not solve this. Survey platforms like Culture Amp and Perceptyx measure the problem but do not coach leaders through it. Executive coaching firms charge $500 to $1,500 per hour and require scheduled sessions that busy executives cancel. AI coaching chatbots like BetterUp and CoachHub are manager-focused and generic. No product combines measurement, personalized coaching, and a cascade mechanism to propagate change through the organization -- and no product is designed specifically for the constraints of C-suite executives.
 
@@ -30,9 +38,28 @@ The platform includes:
 
 - **Zoom AI Companion Integration.** After meetings, Catalyst analyzes the AI Companion summary to detect seven psychological safety signals -- participation balance, question-to-statement ratio, unacknowledged concerns, airtime dominance, and more. Leaders receive a single, actionable coaching prompt within two hours. An optional real-time in-meeting sidebar provides ambient, glanceable nudges visible only to the leader during live Zoom calls.
 
+- **Deep Coaching Sessions (opt-in).** Most Catalyst interactions take 30 seconds or less. But when a leader wants more -- before a difficult conversation, after a challenging Mirror Moment, or when processing a significant team dynamic -- they can open a Deep Coaching Session. This is a longer, conversational AI coaching interaction where the leader can explore a situation in depth: talk through what happened, consider alternative approaches, practice language for an upcoming conversation, or unpack feedback from their team. Sessions are private, available on-demand, and draw on the leader's full SCARF profile, team data, and behavior history. They typically last 5-15 minutes. Deep Coaching Sessions are not required and never prompted unsolicited -- they are there when the leader is ready to go deeper.
+
 - **Mirror Moments.** Monthly side-by-side comparisons showing how the leader rates themselves versus how their team actually experiences them, across all five SCARF domains. This is the moment most leaders go from curious to committed.
 
 - **The Cascade Model.** Once a leader reaches Stage 2, they can invite their direct reports to begin their own Catalyst journey. Those leaders then invite their reports. Culture change propagates downward through the organization, with an executive dashboard showing safety scores across the entire cascade tree.
+
+**Catalyst is built on five converging research streams**, each of which independently points to the same conclusion: the most effective way to change executive behavior is through tiny, contextual prompts delivered in the flow of work.
+
+- **Learning Science (AGES Model, NeuroLeadership Institute).** Lasting learning requires four conditions: Attention (content grabs focus), Generation (the learner creates their own meaning), Emotion (content evokes feeling), and Spacing (repeated exposure over time). Traditional workshops nail Attention but fail on the other three. Catalyst's spaced, contextual, reflective nudges satisfy all four -- the AGES model operationalized.
+
+- **Psychological Safety Research (Edmondson, Clark, Humu/Perceptyx).** Amy Edmondson's research proves psychological safety is the number one predictor of team performance. Timothy Clark's 4 Stages provide the developmental pathway. Humu/Perceptyx proved that nudges delivered in workflow tools produce 8-12 point improvements in manager effectiveness scores within 12 weeks. Catalyst does not invent new theory -- it operationalizes 30 years of validated research into a delivery mechanism that actually changes behavior.
+
+These research foundations are embedded in six design constraints that govern every interaction:
+
+| Design Principle | How Catalyst Implements It |
+|---|---|
+| **Earn every interaction** | Every nudge must feel valuable on its own. If it feels generic, it is a failure |
+| **One thing at a time** | Never present two behaviors, two insights, or two actions simultaneously |
+| **Silence is respect** | If there is nothing contextually relevant to say, say nothing |
+| **Gradual deepening** | Start with one nudge per week. Only increase if the executive engages |
+| **Easy exit, easy return** | Pausing should feel natural, not like failure. Re-engaging should be seamless |
+| **Zero cognitive load** | The nudge should be understood in under three seconds |
 
 "We built Catalyst because every executive coaching product on the market asks leaders to add something to their day," said Dr. Elena Torres, CEO and co-founder of Catalyst. "Executives do not have more time to give. But they do have meetings, decisions, and conversations happening every day. Catalyst makes those existing moments slightly better -- and that is enough. Behavior change does not require heroic effort. It requires the right prompt at the right time, repeated over weeks and months. The neuroscience is clear: that is how neural pathways rewire."
 
@@ -85,6 +112,8 @@ At minimum settings: 30 seconds per week. You receive one email digest with one 
 At default settings: about 30 seconds per day. You receive 2-3 nudges per week, each one a single sentence with a specific behavior to try in an upcoming meeting. You respond with one tap: "Tried it," "Skip," or "Later."
 
 At maximum settings: under 5 minutes per day. You get daily nudges, post-meeting insights from Zoom AI Companion, the real-time in-meeting sidebar, and weekly analytics.
+
+If you want to go deeper on a specific situation -- before a difficult conversation, after a challenging Mirror Moment, or when processing significant team feedback -- you can open a Deep Coaching Session. This is an opt-in, conversational AI coaching interaction that typically lasts 5-15 minutes. It is there when you want it and never prompted unsolicited.
 
 You control this entirely through three dials in the app. You can change your settings at any time. If you get busy, the system detects it -- if you skip three nudges in a row, Catalyst automatically goes quiet and sends a simple message: "We have quieted things down. Tap here whenever you are ready for more."
 
@@ -187,11 +216,11 @@ For context: traditional executive coaching costs $500-1,500 per hour. Catalyst 
 Catalyst integrates with the tools leaders already use:
 
 - **Slack** -- Nudge delivery and one-tap responses
-- **Microsoft Teams** -- Nudge delivery via adaptive cards
-- **Zoom** -- Post-meeting AI Companion analysis and real-time in-meeting sidebar (via Zoom RTMS)
+- **Microsoft Teams** -- Nudge delivery and one-tap responses
+- **Zoom** -- Post-meeting AI Companion analysis and optional real-time in-meeting sidebar
 - **Google Calendar / Outlook** -- Calendar-aware nudge timing (pre-meeting and post-meeting triggers)
-- **Email** -- Weekly digest and pulse survey delivery (SendGrid)
-- **Mobile (iOS and Android)** -- Push notifications for calendar-triggered nudges; full app experience via React Native
+- **Email** -- Weekly digest and pulse survey delivery
+- **Mobile (iOS and Android)** -- Push notifications for calendar-triggered nudges; full app experience
 
 Each channel is independently toggleable. Leaders choose where they want to be reached and can change their channel mix at any time.
 
@@ -217,13 +246,15 @@ Visit **catalyst.ai** to join the waitlist or request a live demo.
 
 **1. Why build this now?**
 
-Three converging forces make this the right moment:
+Four converging forces make this the right moment:
 
-First, the market timing. The MIT/Infosys 2025 report found that 83% of leaders say psychological safety directly impacts the success of AI initiatives, yet only 39% rate their organization's safety as "high." As organizations undergo AI transformation, the need for teams that can challenge assumptions, surface concerns, and experiment without fear is becoming urgent. Psychological safety is shifting from a "nice-to-have" cultural value to a hard prerequisite for AI-era competitiveness.
+First, the urgency of the current environment. AI is disrupting how work gets done at an unprecedented pace -- over 244,000 tech workers were laid off in 2025 alone, and more than 40% of workers report AI-induced anxiety. Reductions in force across major industries have eroded trust. Remote and hybrid work has eliminated the informal cues that once surfaced concerns. Broader sociopolitical tension is creating anxiety that follows people into the workplace. The net result is that teams are more likely to self-censor at precisely the moment organizations need candor most. Psychological safety has shifted from a "nice-to-have" cultural value to a prerequisite for organizational survival.
 
-Second, the technology enablement. Zoom's AI Companion APIs, real-time media streaming (RTMS), and Claude's context-aware personalization capabilities did not exist two years ago. These make it possible for the first time to deliver coaching that is tied to actual meeting behavior rather than generic advice.
+Second, the AI imperative. The MIT/Infosys 2025 report found that 83% of leaders say psychological safety directly impacts the success of AI initiatives, yet only 39% rate their organization's safety as "high." Organizations undergoing AI transformation need teams that can challenge assumptions, surface concerns about new technology, and experiment without fear. Twenty-five percent of leaders have hesitated to even propose AI projects due to fear of how they would be received.
 
-Third, the market gap. After analyzing 19+ products in the space, no single platform combines measurement, AI coaching, nudge delivery, and cascade propagation for executive leaders. Existing tools either measure (Culture Amp, Perceptyx), coach (BetterUp, CoachHub), or nudge (Humu). None close the full loop. And none are designed for the specific constraints of C-suite executives: less time, higher stakes, stronger ego-protective instincts.
+Third, the technology enablement. Zoom's AI Companion APIs, real-time media streaming, and AI-powered personalization capabilities did not exist two years ago. These make it possible for the first time to deliver coaching that is tied to actual meeting behavior rather than generic advice.
+
+Fourth, the market gap. After analyzing 19+ products in the space -- including BetterUp, CoachHub, NILES, Perceptyx/Humu, Valence, Cloverleaf, and Culture Amp -- no single platform combines measurement, AI coaching, nudge delivery, and cascade propagation for executive leaders. Existing tools either measure, coach, or nudge. None close the full loop. And none are designed for the specific constraints of C-suite executives: less time, higher stakes, stronger ego-protective instincts.
 
 ---
 
@@ -250,11 +281,14 @@ No direct competitor offers our full combination of executive-specific design, S
 | **Perceptyx / Humu** | Survey + nudges at scale | Manager-focused, no exec-specific design, no Zoom integration, no cascade |
 | **BetterUp** ($4.7B valuation) | AI + human coaching | Requires scheduled sessions, manager-focused, no nudge-in-workflow model |
 | **CoachHub AIMY** | AI coaching chatbot | Chat-based (requires active engagement), no meeting context, no cascade |
+| **NILES** (NeuroLeadership Institute) | AI leadership coach built on neuroscience research | Broad leadership focus (not PS-specific), chat-initiated (requires leader to engage), no team measurement, no meeting context, no cascade. Shares SCARF foundation with Catalyst but does not operationalize it into contextual nudges tied to real meetings and real team data |
 | **Valence (Nadia)** ($50M Series B) | Agentic AI coaching | Team-focused, not executive-specific, no Zoom integration |
 | **Culture Amp** | Surveys + analytics | Measurement only, no coaching, no nudges |
 | **Cloverleaf** | Pre-meeting nudges | Uses 12 assessments but no SCARF, no cascade, no Zoom AI Companion |
 
-Our defensible differentiation: the Zoom AI Companion integration (post-meeting contextual nudges + real-time sidebar), the cascade model, and the executive-specific invisible coaching philosophy.
+**NILES deserves special attention** because it is the closest product to Catalyst's neuroscience-grounded philosophy. Built by the NeuroLeadership Institute (founded by David Rock, creator of the SCARF model that also underpins Catalyst), NILES draws on 60+ peer-reviewed papers and insights from 200+ Ph.D. scientists. It offers four modes -- coaching, advice and mentoring, feedback, and roleplay -- and is used by organizations including Microsoft, NASA, and Capital One. However, NILES is a general-purpose leadership coaching tool, not a psychological safety platform. It requires the leader to initiate every interaction (chat-based), does not integrate with meeting tools for contextual nudges, does not measure team psychological safety, and does not include a cascade mechanism. Catalyst builds on the same neuroscience foundation but closes the loop: measure the gap, nudge the behavior at the moment it matters, re-measure the impact, and cascade the change through the organization.
+
+Our defensible differentiation: the Zoom AI Companion integration (post-meeting contextual nudges + real-time sidebar), the cascade model, the closed-loop measure-nudge-remeasure architecture, and the executive-specific invisible coaching philosophy.
 
 ---
 
@@ -263,44 +297,41 @@ Our defensible differentiation: the Zoom AI Companion integration (post-meeting 
 The MVP focuses on proving the core loop -- Assess, Nudge, Measure -- for a single leader:
 
 **In scope for MVP:**
-- React Native app (iOS and Android): onboarding, SCARF assessment, home dashboard, nudge library, settings/dials
-- Slack bot integration: pre-meeting nudge delivery + one-tap response capture
+- Cross-platform mobile app (iOS and Android): onboarding, SCARF assessment, home dashboard, nudge library, settings/dials
+- Slack integration: pre-meeting nudge delivery and one-tap response capture
 - Email weekly digest
 - Baseline team pulse survey (Edmondson's 7-item scale) with anonymous aggregation
-- Claude API-powered nudge personalization using SCARF profile + calendar context
-- Google Calendar integration for meeting-aware nudge timing
+- AI-powered nudge personalization using SCARF profile and calendar context
+- Calendar integration for meeting-aware nudge timing
 - First Mirror Moment at Week 4
 - The three dials (frequency, depth, channels) with auto-adjustment on skips
 
 **Deferred to V2:**
-- Microsoft Teams bot
+- Microsoft Teams integration
 - Zoom AI Companion post-meeting analysis
-- Zoom real-time in-meeting sidebar (requires RTMS approval, 4-6 weeks)
+- Zoom real-time in-meeting sidebar
 - Cascade model and organization dashboard
 - Peer cohort facilitation
 - Mobile push notifications
+- Deep Coaching Sessions
 
 This scoping lets us validate the core hypothesis -- that contextual micro-behavior nudges change executive behavior and improve team safety scores -- before investing in the more complex integrations.
 
 ---
 
-**5. What is the tech stack?**
+**5. What is the technical approach?**
 
-| Layer | Technology | Why |
-|---|---|---|
-| Mobile App | React Native + Expo | Cross-platform iOS/Android, fast iteration, strong card-based UI support |
-| Styling | NativeWind (Tailwind for RN) | Consistent design system, rapid prototyping |
-| Navigation | React Navigation | Industry standard for tab + stack navigation |
-| State Management | Zustand | Lightweight, minimal boilerplate, fits our relatively simple state model |
-| Backend | Node.js + Fastify | TypeScript-native, fast, strong WebSocket support for Zoom RTMS |
-| Database | PostgreSQL | Relational model fits naturally, row-level security for privacy architecture |
-| Cache / Queue | Redis + BullMQ | Nudge scheduling, rate limiting, async job processing |
-| AI | Claude API (Anthropic) | Nudge personalization, meeting summary analysis, contextual content generation |
-| Auth | OAuth 2.0 | Slack, Teams, Zoom, Google Calendar |
-| Email | SendGrid | Weekly digests and pulse survey invitations |
-| Push | Expo Push + APNs/FCM | Calendar-triggered mobile nudges |
-| Hosting | Vercel (API) + AWS (DB, Redis) | Or Railway/Render for simpler MVP deployment |
-| Monitoring | Sentry + PostHog | Error tracking + privacy-respecting product analytics |
+Catalyst's architecture follows four technical design principles:
+
+1. **Privacy-first data architecture.** All executive coaching data is encrypted at rest and in transit, with per-user encryption keys. The system enforces strict data sovereignty -- individual nudge responses, reflections, and SCARF profiles are never accessible to anyone other than the executive. Pulse survey responses are anonymized with a minimum respondent threshold before results are displayed.
+
+2. **Multi-channel delivery.** The platform delivers nudges through a unified backend that connects to Slack, Microsoft Teams, Zoom, email, and mobile push. Each channel adapter is independent, allowing new channels to be added without affecting the core system. Leaders choose where they want to be reached.
+
+3. **AI-powered personalization.** Claude AI generates contextual, personalized nudges by combining the leader's SCARF profile, current stage, behavior history, upcoming calendar context, and (when connected) Zoom meeting analysis. This is not a template library -- every nudge is generated for a specific leader in a specific moment.
+
+4. **Calendar-aware intelligence.** The system integrates with Google Calendar and Outlook to detect meeting density, upcoming 1:1s, team meetings, and quiet periods. This enables pre-meeting nudges timed to specific conversations, automatic quiet periods during back-to-back meeting days, and seasonal awareness during high-stress periods like quarter-end.
+
+The working prototype includes a cross-platform mobile app (iOS and Android), Slack and Teams integration, email delivery, calendar-aware nudge scheduling, and AI-powered personalization. Zoom AI Companion integration for post-meeting analysis and the real-time in-meeting sidebar are planned for V2.
 
 ---
 
@@ -334,9 +365,9 @@ This scoping lets us validate the core hypothesis -- that contextual micro-behav
 |---|---|---|---|
 | **Executives disengage after Week 1** | High | Critical | The Dial System defaults to Gentle. Auto-reduce on skips. The first Mirror Moment at Week 4 is specifically designed as the "hook" -- the emotional moment that converts curiosity to commitment. Everything before Week 4 is about earning that moment. |
 | **"This feels like surveillance"** | Medium | Critical | Privacy architecture is the foundation, not a feature. Executive data sovereignty. No admin visibility into individual data. Coaching framing throughout -- "become a better leader," never "we are monitoring you." |
-| **Nudges feel generic** | Medium | High | Claude API personalization uses SCARF profile + meeting context + behavior history + stage. Zoom AI Companion data makes nudges tied to actual meetings. If personalization quality drops, engagement collapses -- this is the core product risk we must get right. |
+| **Nudges feel generic** | Medium | High | AI personalization uses SCARF profile + meeting context + behavior history + stage. Zoom AI Companion data makes nudges tied to actual meetings. If personalization quality drops, engagement collapses -- this is the core product risk we must get right. |
 | **Team members do not respond to pulse surveys** | Medium | High | Surveys are 2 minutes (7 items). Anonymous. Delivered via the channel they already use. One reminder after 48 hours. Minimum 3 responses to display results. Frame as "help your leader grow," not "rate your boss." |
-| **Zoom RTMS approval delay** | High | Medium | Real-time sidebar is deferred to V2. Post-meeting nudges use standard Zoom API access (lower approval barrier). We ship the full product without Zoom and add it as an expansion. |
+| **Zoom integration approval delay** | High | Medium | Real-time sidebar is deferred to V2. Post-meeting nudges use standard Zoom API access (lower approval barrier). We ship the full product without Zoom and add it as an expansion. |
 | **Feature creep** | High | Medium | The design document is the scope contract. The Dial System means we can launch with Gentle + Essentials as the default and build deeper features only as engagement data warrants. |
 | **Executive ego resistance** | Medium | High | Never frame as remediation. "Close the gap" not "fix your behavior." Peer benchmarking normalizes growth. Social proof: "73% of executives in your cohort are practicing this week." Framing is aspirational: the best leaders are the ones who keep growing. |
 
@@ -360,7 +391,7 @@ This scoping lets us validate the core hypothesis -- that contextual micro-behav
 - Conference presence at NeuroLeadership Summit, SHRM, HR Tech.
 
 **Phase 4 -- Platform expansion (Months 12-18):**
-- Teams and Microsoft Teams bot integrations expand channel reach.
+- Expanded platform integrations and channel reach.
 - Zoom AI Companion and real-time sidebar differentiate at the enterprise tier.
 - Partner integrations with HRIS platforms (Workday, BambooHR) for automated onboarding of new leaders.
 
@@ -368,17 +399,19 @@ The cascade model creates a viral coefficient that traditional B2B SaaS does not
 
 ---
 
-**9. Why React Native?**
+**9. What are the product design principles?**
 
-Four reasons:
+Catalyst's design is governed by five principles:
 
-1. **Cross-platform from day one.** Executive leaders use iPhones and Android devices. Building native for both doubles development time with no corresponding user benefit. React Native + Expo gives us both platforms from a single codebase with near-native performance.
+1. **Executive-grade aesthetics.** Think Bloomberg Terminal meets Calm app. No gamification, no cartoons, no confetti. Sophisticated, warm, data-rich. Every data visualization is framed as "opportunity" not "deficiency."
 
-2. **The UI pattern is ideal for React Native.** Catalyst's interface is card-based -- nudge cards, SCARF assessment sliders, dashboard metrics, Mirror Moment comparisons. These are standard UI components that React Native handles well. We are not building a graphics-intensive application or a game. We are building a data-rich dashboard with clean typography and simple interactions.
+2. **Radically minimal.** One primary action per screen. White space is a feature. If the screen feels busy, remove elements. Any screen should be understood in under five seconds.
 
-3. **Fast iteration speed.** Expo's over-the-air updates let us push changes to users without App Store review cycles. For an MVP where we need to iterate quickly on nudge content, copy, and interaction patterns based on real user behavior, this is a significant advantage.
+3. **Invisible by default.** The app is the brain (onboarding, settings, dashboard, Mirror Moments) while integrations with Slack, Teams, Zoom, and email are the hands. Most leaders interact with Catalyst primarily through tools they already use. The app is there when they want depth -- but it never demands their attention.
 
-4. **Integration-ready.** The app's primary value is delivered through bots (Slack, Teams, Zoom, email), not the app itself. The app is the brain -- onboarding, settings, dashboard, Mirror Moments -- while the bots are the hands. React Native + a Node.js/Fastify backend share TypeScript across the stack, which simplifies the integration layer with bot platforms, OAuth flows, and webhook handlers.
+4. **Warm authority.** The app should feel like a trusted advisor -- confident but not cold, data-driven but human. Peer-level tone, never instructional. "High-performing leaders often..." not "You should try..."
+
+5. **Cross-platform from day one.** Executive leaders use iPhones and Android devices. The app is built for both platforms from a single codebase, with a card-based interface optimized for nudge cards, SCARF assessment sliders, dashboard metrics, and Mirror Moment comparisons. Over-the-air updates allow rapid iteration on nudge content and interaction patterns without app store review cycles.
 
 ---
 
@@ -386,13 +419,13 @@ Four reasons:
 
 | Quarter | Focus | Key Deliverables |
 |---|---|---|
-| **Q1 (Months 1-3)** | Core loop MVP | React Native app (onboarding, dashboard, nudge library, dials), Slack bot, email digest, Google Calendar integration, Claude API nudge personalization, baseline pulse survey, first Mirror Moment. Design partners onboarded. |
-| **Q2 (Months 4-6)** | Prove the outcome | Teams bot integration, mobile push notifications, peer cohort v1 (manual facilitation), post-meeting nudges via Zoom AI Companion (standard API), second pulse survey and trend tracking, first case studies published. Paid pilots begin. |
-| **Q3 (Months 7-9)** | Cascade + Zoom | Cascade model (invite direct reports, organization dashboard, safety heatmap), Zoom real-time in-meeting sidebar (RTMS), advanced Claude personalization (meeting history patterns, multi-behavior stacking), scenario-based nudges. Enterprise sales motion begins. |
-| **Q4 (Months 10-12)** | Scale + optimize | HRIS integrations (Workday, BambooHR), auto-enrollment for new leaders, mentor role for Stage 4 leaders, organization-wide culture analytics, SOC 2 Type II certification, API for custom integrations. Target: 500+ active leaders across 15-25 organizations. |
+| **Q1 (Months 1-3)** | Core loop MVP | Mobile app (onboarding, dashboard, nudge library, dials), Slack integration, email digest, calendar integration, AI-powered nudge personalization, baseline pulse survey, first Mirror Moment. Design partners onboarded. |
+| **Q2 (Months 4-6)** | Prove the outcome | Teams integration, mobile push notifications, peer cohort v1 (manual facilitation), post-meeting nudges via Zoom AI Companion, Deep Coaching Sessions, second pulse survey and trend tracking, first case studies published. Paid pilots begin. |
+| **Q3 (Months 7-9)** | Cascade + Zoom | Cascade model (invite direct reports, organization dashboard, safety heatmap), Zoom real-time in-meeting sidebar, advanced AI personalization (meeting history patterns, multi-behavior stacking), scenario-based nudges. Enterprise sales motion begins. |
+| **Q4 (Months 10-12)** | Scale + optimize | HRIS integrations (Workday, BambooHR), auto-enrollment for new leaders, mentor role for Stage 4 leaders, organization-wide culture analytics, SOC 2 Type II certification. Target: 500+ active leaders across 15-25 organizations. |
 
 The roadmap is sequenced to validate assumptions before scaling complexity. Q1 proves that executives engage with micro-behavior nudges. Q2 proves that engagement produces measurable team outcomes. Q3 proves that cascade propagation works. Q4 scales what works.
 
 ---
 
-*This document follows the Amazon PR/FAQ format. The press release describes the product as if it has launched. The FAQs address the most important questions from customers (external) and from the team and stakeholders (internal). All statistics and research references are drawn from validated sources documented in the project research files.*
+*This document follows the Amazon PR/FAQ format. The press release describes the product as if it has launched. The FAQs address the most important questions from customers (external) and from the team and stakeholders (internal). All statistics and research references are drawn from validated sources including: Perceptyx 2025 Benchmark, Wiley Psychological Safety Survey, Gallup State of the Global Workplace (2024), BCG 2024 Study (28,000 professionals), MIT/Infosys 2025 Report, Google Project Aristotle (2012-2016), Edmondson (1999), Frazier et al. (2017) meta-analysis, and the NeuroLeadership Institute. Full citations are maintained in the project research files.*
