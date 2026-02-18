@@ -26,19 +26,19 @@ Executives already know that psychological safety matters. Google's Project Aris
 
 The current approaches do not solve this. Survey platforms measure the problem but do not coach leaders through it. Traditional executive coaching requires scheduled sessions that busy executives cancel, and skills practiced in a coaching room do not transfer to the pressure of real meetings. AI coaching chatbots are manager-focused and generic. No approach combines measurement, personalized coaching, and a cascade mechanism to propagate change through the organization -- and none are designed specifically for the constraints of senior leaders.
 
-**Catalyst is invisible coaching.** It does not ask executives to learn a framework, attend a session, or open a new app. It embeds directly into Slack, Microsoft Teams, Zoom, email, and the leader's calendar. Using the SCARF neuroscience model (Status, Certainty, Autonomy, Relatedness, Fairness) and 30 years of psychological safety research from Amy Edmondson, Timothy Clark, BJ Fogg, and David Rock, Catalyst identifies the exact micro-behavior each leader needs to practice and delivers it at the moment of highest contextual relevance.
+**Catalyst is invisible coaching.** It does not ask executives to learn a framework, attend a session, or open a new app. It embeds directly into Slack, Microsoft Teams, Zoom, email, and the leader's calendar. Grounded in neuroscience research on how the brain processes social threat and reward -- including David Rock's SCARF model and 30 years of psychological safety research from Amy Edmondson, Timothy Clark, and Ingrid Nembhard -- Catalyst identifies the exact micro-behavior each leader needs to practice and delivers it at the moment of highest contextual relevance.
 
 The platform includes:
 
 - **The 3-Dial System.** Leaders control their experience with three simple dials: Nudge Frequency (from one per week to daily), Insight Depth (from a single sentence to full data with peer benchmarks), and Channel Mix (choose any combination of Slack, Teams, Zoom, email, mobile push, or in-app only). If a leader gets too busy, the system automatically dials itself down. No guilt. No "you missed 3 days" alerts. Zero shame.
 
-- **SCARF-Informed Personalization.** A 3-minute onboarding assessment maps each leader's profile across five neuroscience domains. Every nudge is then personalized using Claude AI -- not generic tips, but specific prompts tied to that leader's blind spots, their upcoming meetings, and their team's actual feedback.
+- **Neuroscience-Informed Personalization.** A 3-minute onboarding assessment maps each leader's profile across five domains that govern how people experience threat and reward at work. Every nudge is then personalized using Claude AI -- not generic tips, but specific prompts tied to that leader's blind spots, their upcoming meetings, and their team's actual feedback.
 
 - **Zoom AI Companion Integration.** After meetings, Catalyst analyzes the AI Companion summary to detect seven psychological safety signals -- participation balance, question-to-statement ratio, unacknowledged concerns, airtime dominance, and more. Leaders receive a single, actionable coaching prompt within two hours. An optional real-time in-meeting sidebar provides ambient, glanceable nudges visible only to the leader during live Zoom calls.
 
-- **Deep Coaching Sessions (opt-in).** Most Catalyst interactions take 30 seconds or less. But when a leader wants more -- before a difficult conversation, after a challenging Mirror Moment, or when processing a significant team dynamic -- they can open a Deep Coaching Session. This is a longer, conversational AI coaching interaction where the leader can explore a situation in depth: talk through what happened, consider alternative approaches, practice language for an upcoming conversation, or unpack feedback from their team. Sessions are private, available on-demand, and draw on the leader's full SCARF profile, team data, and behavior history. They typically last 5-15 minutes. Deep Coaching Sessions are not required and never prompted unsolicited -- they are there when the leader is ready to go deeper.
+- **Deep Coaching Sessions (opt-in).** Most Catalyst interactions take 30 seconds or less. But when a leader wants more -- before a difficult conversation, after a challenging Mirror Moment, or when processing a significant team dynamic -- they can open a Deep Coaching Session. This is a longer, conversational AI coaching interaction where the leader can explore a situation in depth: talk through what happened, consider alternative approaches, practice language for an upcoming conversation, or unpack feedback from their team. Sessions are private, available on-demand, and draw on the leader's full leadership profile, team data, and behavior history. They typically last 5-15 minutes. Deep Coaching Sessions are not required and never prompted unsolicited -- they are there when the leader is ready to go deeper.
 
-- **Mirror Moments.** Monthly side-by-side comparisons showing how the leader rates themselves versus how their team actually experiences them, across all five SCARF domains. This is the moment most leaders go from curious to committed.
+- **Mirror Moments.** Monthly side-by-side comparisons showing how the leader rates themselves versus how their team actually experiences them -- including whose voices are being heard and whose are not. This is the moment most leaders go from curious to committed.
 
 - **The Cascade Model.** Once a leader reaches Stage 2, they can invite their direct reports to begin their own Catalyst journey. Those leaders then invite their reports. Culture change propagates downward through the organization, with an executive dashboard showing safety scores across the entire cascade tree.
 
@@ -46,7 +46,7 @@ The platform includes:
 
 - **Learning Science (AGES Model, NeuroLeadership Institute).** Lasting learning requires four conditions: Attention (content grabs focus), Generation (the learner creates their own meaning), Emotion (content evokes feeling), and Spacing (repeated exposure over time). Traditional workshops nail Attention but fail on the other three. Catalyst's spaced, contextual, reflective nudges satisfy all four -- the AGES model operationalized.
 
-- **Psychological Safety Research (Edmondson, Clark, Humu/Perceptyx).** Amy Edmondson's research proves psychological safety is the number one predictor of team performance. Timothy Clark's 4 Stages provide the developmental pathway. Humu/Perceptyx proved that nudges delivered in workflow tools produce 8-12 point improvements in manager effectiveness scores within 12 weeks. Catalyst does not invent new theory -- it operationalizes 30 years of validated research into a delivery mechanism that actually changes behavior.
+- **Psychological Safety Research (Edmondson, Clark, Nembhard, Humu/Perceptyx).** Amy Edmondson's research proves psychological safety is the number one predictor of team performance. Timothy Clark's 4 Stages provide the developmental pathway. Nembhard and Edmondson's work on leader inclusiveness shows that in hierarchical teams, the leader's effort to invite every voice in the room is the strongest predictor of whether people speak up. Humu/Perceptyx proved that nudges delivered in workflow tools produce 8-12 point improvements in manager effectiveness scores within 12 weeks. Catalyst does not invent new theory -- it operationalizes 30 years of validated research into a delivery mechanism that actually changes behavior.
 
 These research foundations are embedded in six design constraints that govern every interaction:
 
@@ -58,6 +58,7 @@ These research foundations are embedded in six design constraints that govern ev
 | **Gradual deepening** | Start with one nudge per week. Only increase if the executive engages |
 | **Easy exit, easy return** | Pausing should feel natural, not like failure. Re-engaging should be seamless |
 | **Zero cognitive load** | The nudge should be understood in under three seconds |
+| **Every voice in the room** | Nudges actively surface whose perspectives are missing, not just what the leader should say |
 
 Catalyst was built because every leadership development approach asks leaders to add something to their day. Senior leaders do not have more time to give. But they do have meetings, decisions, and conversations happening every day. Catalyst makes those existing moments slightly better -- and that is enough. Behavior change does not require heroic effort. It requires the right prompt at the right time, repeated over weeks and months. The neuroscience is clear: that is how neural pathways rewire.
 
@@ -65,7 +66,7 @@ One early user, a VP of Engineering, described the experience: "I was skeptical.
 
 **How Catalyst works in three steps:**
 
-1. **Assess.** An 8-minute onboarding maps the leader's SCARF profile and sends a 2-minute anonymous pulse survey (Edmondson's validated 7-item scale) to their team. Results arrive in 48-72 hours, revealing the perception gap.
+1. **Assess.** An 8-minute onboarding maps the leader's profile across five neuroscience-informed domains and sends a 2-minute anonymous pulse survey (Edmondson's validated 7-item scale) to their team. Results arrive in 48-72 hours, revealing the perception gap.
 
 2. **Nudge.** The leader picks one micro-behavior to practice -- such as "Ask a genuine question before stating your view" or "Wait 5-7 seconds after asking a question." Catalyst delivers contextual prompts tied to real upcoming meetings, real team dynamics, and real Zoom meeting data. Each nudge takes 5-60 seconds to act on.
 
@@ -143,11 +144,11 @@ Your Zoom data is processed in real-time and then discarded. Raw transcripts are
 
 No. This is non-negotiable in our architecture.
 
-Your individual nudge responses, reflections, SCARF profile, and Mirror Moment data are never visible to anyone -- not HR, not your manager, not organization admins, not Catalyst staff. Catalyst is a coaching tool, not a surveillance tool.
+Your individual nudge responses, reflections, leadership profile, and Mirror Moment data are never visible to anyone -- not HR, not your manager, not organization admins, not Catalyst staff. Catalyst is a coaching tool, not a surveillance tool.
 
 Your team's pulse survey responses are anonymous. You see aggregated scores only. A minimum of three respondents is required before any results are displayed. No individual response is ever revealed.
 
-Data is encrypted at rest (AES-256) and in transit (TLS 1.3). SCARF profiles and pulse responses are encrypted with per-user keys. You can delete all your data at any time -- immediate, complete destruction, not a soft delete.
+Data is encrypted at rest (AES-256) and in transit (TLS 1.3). Leadership profiles and pulse responses are encrypted with per-user keys. You can delete all your data at any time -- immediate, complete destruction, not a soft delete.
 
 Catalyst is designed for GDPR, CCPA, SOC 2 Type II, and EU AI Act compliance.
 
@@ -157,7 +158,7 @@ Catalyst is designed for GDPR, CCPA, SOC 2 Type II, and EU AI Act compliance.
 
 The cascade model is how Catalyst turns individual behavior change into organizational culture change.
 
-When you reach Stage 2 (typically around Week 7), you can invite your direct reports to begin their own Catalyst journey. They go through the same onboarding -- SCARF assessment, team pulse survey, first micro-behavior selection -- tailored to their context and their teams. When they reach Stage 2, they can invite their direct reports. And so on.
+When you reach Stage 2 (typically around Week 7), you can invite your direct reports to begin their own Catalyst journey. They go through the same onboarding -- leadership assessment, team pulse survey, first micro-behavior selection -- tailored to their context and their teams. When they reach Stage 2, they can invite their direct reports. And so on.
 
 As the cascade grows, you unlock an organization dashboard showing safety scores across your entire leadership tree. You can see which teams are thriving and which are at risk -- without ever seeing any individual leader's private coaching data.
 
@@ -169,7 +170,7 @@ This is how culture propagates. Research shows that when a leader models psychol
 
 Catalyst is built on the convergence of five validated research streams:
 
-- **Psychological safety research.** Amy Edmondson's foundational work (51 work teams, 1999; 136-sample meta-analysis, 22,000+ individuals). Google's Project Aristotle (180+ teams). Timothy Clark's 4 Stages framework.
+- **Psychological safety research.** Amy Edmondson's foundational work (51 work teams, 1999; 136-sample meta-analysis, 22,000+ individuals). Google's Project Aristotle (180+ teams). Timothy Clark's 4 Stages framework. Nembhard and Edmondson's research on leader inclusiveness -- which found that in hierarchical teams, safety is not equally distributed; the leader's deliberate effort to invite and value every voice in the room is the single strongest predictor of whether team members will speak up.
 
 - **Neuroscience.** David Rock's SCARF model and the NeuroLeadership Institute's research showing the brain processes social threats using the same circuits as physical threats (Lieberman, 2013).
 
@@ -288,7 +289,7 @@ Each channel is independently toggleable. Leaders choose where they want to be r
 
 Three steps, eight minutes total:
 
-1. **Complete the SCARF Quick Assessment** through the Catalyst portal (3 minutes -- five sliders that map your leadership profile across five neuroscience domains).
+1. **Complete the Quick Self-Assessment** through the Catalyst portal (3 minutes -- five sliders that map your leadership profile across five neuroscience-informed domains).
 2. **Send the baseline pulse survey** to your direct reports (Catalyst handles delivery -- your team members spend 2 minutes answering Edmondson's validated 7-item survey anonymously).
 3. **Pick your first micro-behavior** from a curated card deck and connect your preferred channels (Slack, Teams, Zoom, email, calendar).
 
@@ -329,18 +330,18 @@ The impact of psychological safety on organizational performance is well-documen
 
 **3. How does Catalyst compare to existing leadership development approaches?**
 
-No existing approach offers the full combination of executive-specific design, SCARF-informed personalization, in-workflow nudges, meeting intelligence, and cascade propagation. Here is how Catalyst differs from common alternatives:
+No existing approach offers the full combination of executive-specific design, neuroscience-informed personalization, in-workflow nudges, meeting intelligence, and cascade propagation. Here is how Catalyst differs from common alternatives:
 
 | Approach | What It Does | How Catalyst Differs |
 |---|---|---|
 | **Survey platforms** (Culture Amp, Perceptyx) | Measure engagement and safety | Catalyst measures AND coaches -- closing the loop between insight and behavior change |
 | **Traditional executive coaching** | 1:1 sessions with a coach | Catalyst reinforces coaching daily in the flow of work -- no scheduled sessions, no context collapse |
 | **AI coaching chatbots** (BetterUp, CoachHub) | On-demand chat-based coaching | Catalyst pushes nudges at the moment of relevance -- leaders do not need to remember to engage |
-| **Nudge platforms** (Humu) | Behavioral nudges at scale | Catalyst adds SCARF personalization, meeting context, Zoom intelligence, and cascade propagation |
-| **NILES** (NeuroLeadership Institute) | AI leadership coach built on neuroscience | Shares SCARF foundation but is broad-purpose; requires leader-initiated chat, no team measurement, no meeting context, no cascade |
-| **Pre-meeting nudge tools** (Cloverleaf) | Assessment-based nudges | No SCARF model, no cascade mechanism, no Zoom AI Companion integration |
+| **Nudge platforms** (Humu) | Behavioral nudges at scale | Catalyst adds deep personalization, meeting context, Zoom intelligence, and cascade propagation |
+| **NILES** (NeuroLeadership Institute) | AI leadership coach built on neuroscience | Same neuroscience foundation, but requires leader-initiated chat -- no push delivery, no team measurement, no meeting context, no cascade |
+| **Pre-meeting nudge tools** (Cloverleaf) | Assessment-based nudges | No neuroscience model, no cascade mechanism, no Zoom AI Companion integration |
 
-**NILES deserves special attention** because it is the closest tool to Catalyst's neuroscience-grounded philosophy. Built by the NeuroLeadership Institute (founded by David Rock, creator of the SCARF model that also underpins Catalyst), NILES draws on 60+ peer-reviewed papers. However, NILES is a general-purpose leadership coaching tool, not a psychological safety platform. It requires the leader to initiate every interaction, does not integrate with meeting tools for contextual nudges, does not measure team psychological safety, and does not include a cascade mechanism. Catalyst builds on the same neuroscience foundation but closes the loop: measure the gap, nudge the behavior at the moment it matters, re-measure the impact, and cascade the change through the organization.
+**NILES deserves special attention** because it validates the core premise -- that neuroscience-grounded coaching works. Built by the NeuroLeadership Institute (David Rock, 60+ peer-reviewed papers), NILES proves the science is sound. The difference is delivery mechanism, not science. NILES is chat-initiated: the leader must remember to open it, describe a situation, and ask for help. Catalyst is push-based and context-aware: it reads the leader's calendar, analyzes their meeting patterns, and delivers the right nudge at the right moment without the leader having to do anything. NILES also does not measure team psychological safety, does not integrate with meeting tools, and does not include a cascade mechanism. The lesson from NILES is not that the science needs to be different -- it is that the delivery needs to be invisible.
 
 Catalyst's unique approach: the Zoom AI Companion integration (post-meeting contextual nudges + real-time sidebar), the cascade model, the closed-loop measure-nudge-remeasure architecture, and the executive-specific invisible coaching philosophy.
 
@@ -351,11 +352,11 @@ Catalyst's unique approach: the Zoom AI Companion integration (post-meeting cont
 The MVP focuses on proving the core loop -- Assess, Nudge, Measure -- for a single leader:
 
 **In scope for MVP:**
-- Cross-platform mobile app (iOS and Android): onboarding, SCARF assessment, home dashboard, nudge library, settings/dials
+- Cross-platform mobile app (iOS and Android): onboarding, leadership assessment, home dashboard, nudge library, settings/dials
 - Slack integration: pre-meeting nudge delivery and one-tap response capture
 - Email weekly digest
 - Baseline team pulse survey (Edmondson's 7-item scale) with anonymous aggregation
-- AI-powered nudge personalization using SCARF profile and calendar context
+- AI-powered nudge personalization using leadership profile and calendar context
 - Calendar integration for meeting-aware nudge timing
 - First Mirror Moment at Week 4
 - The three dials (frequency, depth, channels) with auto-adjustment on skips
@@ -377,11 +378,11 @@ This scoping lets us validate the core hypothesis -- that contextual micro-behav
 
 Catalyst's architecture follows four technical design principles:
 
-1. **Privacy-first data architecture.** All executive coaching data is encrypted at rest and in transit, with per-user encryption keys. The system enforces strict data sovereignty -- individual nudge responses, reflections, and SCARF profiles are never accessible to anyone other than the executive. Pulse survey responses are anonymized with a minimum respondent threshold before results are displayed.
+1. **Privacy-first data architecture.** All executive coaching data is encrypted at rest and in transit, with per-user encryption keys. The system enforces strict data sovereignty -- individual nudge responses, reflections, and leadership profiles are never accessible to anyone other than the executive. Pulse survey responses are anonymized with a minimum respondent threshold before results are displayed.
 
 2. **Multi-channel delivery.** The platform delivers nudges through a unified backend that connects to Slack, Microsoft Teams, Zoom, email, and mobile push. Each channel adapter is independent, allowing new channels to be added without affecting the core system. Leaders choose where they want to be reached.
 
-3. **AI-powered personalization.** Claude AI generates contextual, personalized nudges by combining the leader's SCARF profile, current stage, behavior history, upcoming calendar context, and (when connected) Zoom meeting analysis. This is not a template library -- every nudge is generated for a specific leader in a specific moment.
+3. **AI-powered personalization.** Claude AI generates contextual, personalized nudges by combining the leader's neuroscience-informed profile, current stage, behavior history, upcoming calendar context, and (when connected) Zoom meeting analysis. This is not a template library -- every nudge is generated for a specific leader in a specific moment.
 
 4. **Calendar-aware intelligence.** The system integrates with Google Calendar and Outlook to detect meeting density, upcoming 1:1s, team meetings, and quiet periods. This enables pre-meeting nudges timed to specific conversations, automatic quiet periods during back-to-back meeting days, and seasonal awareness during high-stress periods like quarter-end.
 
@@ -419,7 +420,7 @@ The working prototype includes a cross-platform mobile app (iOS and Android), Sl
 |---|---|---|---|
 | **Executives disengage after Week 1** | High | Critical | The Dial System defaults to Gentle. Auto-reduce on skips. The first Mirror Moment at Week 4 is specifically designed as the "hook" -- the emotional moment that converts curiosity to commitment. Everything before Week 4 is about earning that moment. |
 | **"This feels like surveillance"** | Medium | Critical | Privacy architecture is the foundation, not a feature. Executive data sovereignty. No admin visibility into individual data. Coaching framing throughout -- "become a better leader," never "we are monitoring you." |
-| **Nudges feel generic** | Medium | High | AI personalization uses SCARF profile + meeting context + behavior history + stage. Zoom AI Companion data makes nudges tied to actual meetings. If personalization quality drops, engagement collapses -- this is the core product risk we must get right. |
+| **Nudges feel generic** | Medium | High | AI personalization uses leadership profile + meeting context + behavior history + stage. Zoom AI Companion data makes nudges tied to actual meetings. If personalization quality drops, engagement collapses -- this is the core product risk we must get right. |
 | **Team members do not respond to pulse surveys** | Medium | High | Surveys are 2 minutes (7 items). Anonymous. Delivered via the channel they already use. One reminder after 48 hours. Minimum 3 responses to display results. Frame as "help your leader grow," not "rate your boss." |
 | **Zoom integration approval delay** | High | Medium | Real-time sidebar is deferred to V2. Post-meeting nudges use standard Zoom API access (lower approval barrier). We ship the full product without Zoom and add it as an expansion. |
 | **Feature creep** | High | Medium | The design document is the scope contract. The Dial System means we can launch with Gentle + Essentials as the default and build deeper features only as engagement data warrants. |
@@ -465,7 +466,7 @@ Catalyst's design is governed by five principles:
 
 4. **Warm authority.** The app should feel like a trusted advisor -- confident but not cold, data-driven but human. Peer-level tone, never instructional. "High-performing leaders often..." not "You should try..."
 
-5. **Cross-platform from day one.** Executive leaders use iPhones and Android devices. The app is built for both platforms from a single codebase, with a card-based interface optimized for nudge cards, SCARF assessment sliders, dashboard metrics, and Mirror Moment comparisons. Over-the-air updates allow rapid iteration on nudge content and interaction patterns without app store review cycles.
+5. **Cross-platform from day one.** Executive leaders use iPhones and Android devices. The app is built for both platforms from a single codebase, with a card-based interface optimized for nudge cards, assessment sliders, dashboard metrics, and Mirror Moment comparisons. Over-the-air updates allow rapid iteration on nudge content and interaction patterns without app store review cycles.
 
 ---
 
