@@ -63,29 +63,28 @@ export default function Hero() {
               <div className="inline-flex items-center gap-2 rounded-full bg-navy/5 px-4 py-1.5 mb-8">
                 <div className="h-1.5 w-1.5 rounded-full bg-sage animate-pulse" />
                 <span className="text-xs font-semibold tracking-wide text-navy/60 uppercase">
-                  Now in Early Access
+                  Internal Leadership Tool
                 </span>
               </div>
             </div>
 
             <h1 className="animate-fade-in-up delay-100 text-4xl sm:text-5xl lg:text-[3.5rem] font-bold leading-[1.1] tracking-tight text-navy">
-              The gap between how leaders and teams experience safety is the{' '}
-              <span className="gradient-text">#1 blind spot</span>{' '}
-              in leadership.
+              Build teams where people{' '}
+              <span className="gradient-text">actually speak up.</span>
             </h1>
 
             <p className="animate-fade-in-up delay-300 mt-6 text-lg text-navy/60 leading-relaxed max-w-lg">
-              Catalyst uses neuroscience-backed AI to close the perception gap,
-              turning invisible threats to psychological safety into visible,
-              actionable moments of growth.
+              Catalyst helps leaders across our organization close the gap between
+              how safe we think our teams feel and how they actually feel &mdash;
+              through private, AI-powered coaching built into the tools you already use.
             </p>
 
             <div className="animate-fade-in-up delay-500 mt-10 flex flex-col sm:flex-row gap-4">
               <a
-                href="#waitlist"
-                className="inline-flex items-center justify-center rounded-full bg-amber px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-amber/25 transition-all hover:bg-amber-dark hover:shadow-xl hover:shadow-amber/30 hover:-translate-y-0.5 animate-pulse-glow"
+                href="#get-started"
+                className="inline-flex items-center justify-center rounded-full bg-amber px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-amber/25 transition-all hover:bg-amber-dark hover:shadow-xl hover:shadow-amber/30 hover:-translate-y-0.5"
               >
-                Get Early Access
+                Begin Your Assessment
                 <svg className="ml-2 w-4 h-4" viewBox="0 0 16 16" fill="none">
                   <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
@@ -94,7 +93,7 @@ export default function Hero() {
                 href="#how-it-works"
                 className="inline-flex items-center justify-center rounded-full border-2 border-navy/10 px-8 py-3.5 text-base font-semibold text-navy transition-all hover:border-navy/30 hover:bg-white/50"
               >
-                See How It Works
+                Learn More
               </a>
             </div>
           </div>
@@ -114,20 +113,21 @@ export default function Hero() {
                   </h3>
                 </div>
                 <p className="text-sm text-navy/50 leading-relaxed">
-                  Leaders consistently overestimate how safe their teams feel.
-                  This invisible gap silently erodes trust, innovation, and retention.
+                  Research shows leaders consistently overestimate how safe their
+                  teams feel. This invisible gap silently erodes trust, innovation,
+                  and retention.
                 </p>
               </div>
 
               <div className="space-y-6">
                 <PerceptionBar
                   label="Leaders who believe their team feels safe"
-                  percentage={93}
+                  percentage={87}
                   color="sage"
                   delay={800}
                 />
                 <PerceptionBar
-                  label="Team members who actually feel safe"
+                  label="Individual contributors who actually feel safe"
                   percentage={53}
                   color="coral"
                   delay={1400}
@@ -136,11 +136,11 @@ export default function Hero() {
 
               <div className="mt-8 flex items-center gap-3 rounded-xl bg-coral/5 p-4">
                 <div className="flex-shrink-0 h-10 w-10 rounded-full bg-coral/10 flex items-center justify-center">
-                  <span className="text-lg">40%</span>
+                  <span className="text-lg font-bold text-coral">34</span>
                 </div>
                 <p className="text-sm text-navy/70 font-medium">
-                  <span className="text-coral font-bold">40-point gap</span> is the average
-                  distance between leader perception and team reality.
+                  <span className="text-coral font-bold">34-point gap</span> between
+                  how leaders perceive safety and how their teams experience it.
                 </p>
               </div>
             </div>

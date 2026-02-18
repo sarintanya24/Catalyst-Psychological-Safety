@@ -25,18 +25,18 @@ function useInView(threshold = 0.15) {
 
 const features = [
   {
-    tag: 'Core Framework',
+    tag: 'Your Controls',
     title: 'The 3-Dial System',
     description:
-      'Three intuitive dials track your psychological safety across team dynamics, leadership behaviors, and organizational culture. Watch all three move in real-time as you implement micro-behaviors.',
+      'You control everything with three simple dials: how often you get nudges, how deep the insights go, and which channels deliver them. If you get busy, the system automatically dials itself down. No guilt. No missed-days alerts.',
     detail:
-      'Based on Edmondson\'s team-level model, extended with SCARF neuroscience for individual precision.',
+      'Frequency (gentle to daily), Depth (one sentence to full data), Channels (Slack, email, Teams, mobile).',
     visual: (
       <div className="flex items-center justify-center gap-6 py-8">
         {[
-          { label: 'Team', value: 72, color: '#4A9E7D' },
-          { label: 'Leader', value: 85, color: '#E8913A' },
-          { label: 'Org', value: 61, color: '#E07A6B' },
+          { label: 'Frequency', value: 72, color: '#4A9E7D' },
+          { label: 'Depth', value: 85, color: '#E8913A' },
+          { label: 'Channels', value: 61, color: '#E07A6B' },
         ].map((dial) => (
           <div key={dial.label} className="flex flex-col items-center gap-3">
             <div className="relative h-20 w-20">
@@ -78,9 +78,9 @@ const features = [
     tag: 'Self-Awareness',
     title: 'Mirror Moments',
     description:
-      'Gentle, perfectly-timed reflections that surface blind spots without triggering defensiveness. Each Mirror Moment maps to a specific SCARF domain, helping leaders see what their teams see.',
+      'Monthly side-by-side views showing how you rate yourself versus how your team actually experiences you — across all five SCARF domains. This is where most leaders go from curious to committed.',
     detail:
-      'Delivered in the 24-hour window after key interactions, when self-reflection is most effective.',
+      'Private to you. Based on anonymous team pulse data and your own self-assessment.',
     visual: (
       <div className="rounded-xl bg-navy/[0.02] border border-navy/5 p-6 my-4">
         <div className="flex items-start gap-3">
@@ -112,9 +112,9 @@ const features = [
     tag: 'Meeting Intelligence',
     title: 'Zoom AI Companion',
     description:
-      'Real-time analysis of meeting dynamics detects interruption patterns, speaking time distribution, and psychological safety signals. Post-meeting insights arrive as private, actionable nudges.',
+      'After meetings, Catalyst analyzes the AI Companion summary for psychological safety signals — participation balance, question-to-statement ratio, unacknowledged concerns, and airtime distribution. You get one actionable prompt within two hours.',
     detail:
-      'Integrates natively with Zoom\'s AI Companion API for zero-friction meeting analysis.',
+      'An optional real-time sidebar provides glanceable nudges during live meetings, visible only to you.',
     visual: (
       <div className="rounded-xl bg-navy/[0.02] border border-navy/5 p-5 my-4">
         <div className="flex items-center gap-2 mb-4">
@@ -148,25 +148,25 @@ const features = [
           ))}
         </div>
         <p className="text-[10px] text-navy/30 mt-3 leading-relaxed">
-          Speaking time imbalance detected. Nudge scheduled for tomorrow.
+          Speaking time imbalance detected. Coaching nudge scheduled for tomorrow.
         </p>
       </div>
     ),
     accent: 'coral',
   },
   {
-    tag: 'Philosophy',
-    title: 'Invisible Coaching',
+    tag: 'Fits Your Workflow',
+    title: 'Invisible by Design',
     description:
-      'The best coaching doesn\'t feel like coaching. Catalyst embeds safety-building behaviors into workflows leaders already use -- Slack messages, meeting prep, email digests -- so change happens without resistance.',
+      'Catalyst embeds into the tools you already use — Slack, Teams, email, your calendar. Most interactions happen there, not in a separate app. The best coaching doesn\'t add to your day. It makes existing moments better.',
     detail:
-      'Zero new apps to learn. Zero extra meetings. Just better leadership, invisibly.',
+      'Zero new apps to learn. Zero extra meetings. Under 30 seconds per nudge.',
     visual: (
       <div className="flex flex-col gap-3 my-4">
         {[
           { channel: 'Slack', icon: '#', msg: 'Try opening with "What am I missing?" in today\'s sync' },
-          { channel: 'Email', icon: '@', msg: 'Weekly safety pulse: Team certainty up 12% this sprint' },
-          { channel: 'Calendar', icon: '~', msg: '1:1 prep: Ask about the deadline concern Sarah raised' },
+          { channel: 'Email', icon: '@', msg: 'Weekly digest: Team certainty up 12% this sprint' },
+          { channel: 'Calendar', icon: '~', msg: '1:1 prep: Ask about the concern Sarah raised on Friday' },
         ].map((item) => (
           <div
             key={item.channel}
@@ -211,12 +211,12 @@ export default function Features() {
             Features
           </p>
           <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-navy leading-tight ${inView ? 'animate-fade-in-up delay-100' : 'opacity-0'}`}>
-            The tools that make{' '}
-            <span className="gradient-text">safety invisible</span>
+            Tools that make growth{' '}
+            <span className="gradient-text">feel effortless</span>
           </h2>
           <p className={`mt-6 text-lg text-navy/50 leading-relaxed ${inView ? 'animate-fade-in-up delay-200' : 'opacity-0'}`}>
-            No extra meetings. No awkward workshops. Just science-backed nudges
-            woven into the way you already lead.
+            No extra meetings. No workshops. Science-backed nudges woven into
+            the way you already lead.
           </p>
         </div>
 

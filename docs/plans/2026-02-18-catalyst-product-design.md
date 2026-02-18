@@ -31,7 +31,7 @@
 
 ### The Perception Gap
 
-93% of executives report feeling psychologically safe at work. Only 53% of individual contributors say the same. This 40-point gap is the most dangerous blind spot in modern leadership — because leaders genuinely believe their teams feel safe, while their teams are silently withholding ideas, hiding mistakes, and avoiding risk.
+87% of executives report positive perceptions of psychological safety at work, compared to just 69% of individual contributors (Perceptyx, 2025 Benchmark). On risk-taking specifically, only 53% of individual contributors feel safe taking risks, versus 76% of executives (Wiley Survey). This perception gap is the most dangerous blind spot in modern leadership — because leaders genuinely believe their teams feel safe, while their teams are silently withholding ideas, hiding mistakes, and avoiding risk.
 
 ### Why This Gap Exists
 
@@ -370,7 +370,7 @@ After onboarding, Catalyst goes quiet until the baseline pulse results come in. 
 │      feel to speak up?"             │
 │                                     │
 │   ┌─────────────────────────────┐   │
-│   │  YOU         ███████████ 93%│   │
+│   │  YOU         ███████████ 87%│   │
 │   │  YOUR TEAM   █████████░ 53% │   │
 │   └─────────────────────────────┘   │
 │                                     │

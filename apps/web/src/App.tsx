@@ -3,8 +3,7 @@ import Hero from './components/Hero'
 import HowItWorks from './components/HowItWorks'
 import Features from './components/Features'
 import SocialProof from './components/SocialProof'
-import Pricing from './components/Pricing'
-import Waitlist from './components/Waitlist'
+import GetStarted from './components/GetStarted'
 import Footer from './components/Footer'
 
 function App() {
@@ -16,8 +15,7 @@ function App() {
         <HowItWorks />
         <Features />
         <SocialProof />
-        <Pricing />
-        <Waitlist />
+        <GetStarted />
       </main>
       <Footer />
     </div>

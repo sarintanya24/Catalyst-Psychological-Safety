@@ -4,9 +4,9 @@ const steps = [
   {
     number: '01',
     title: 'Assess',
-    subtitle: 'SCARF Profile',
+    subtitle: 'Your SCARF Profile',
     description:
-      'A 5-minute neuroscience-based assessment reveals each leader\'s unique threat and reward profile across Status, Certainty, Autonomy, Relatedness, and Fairness domains.',
+      'A 5-minute neuroscience-based assessment maps your unique leadership profile across Status, Certainty, Autonomy, Relatedness, and Fairness. Your team completes a brief anonymous pulse survey so you can see where you stand.',
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
         <circle cx="16" cy="16" r="12" stroke="currentColor" strokeWidth="1.5" />
@@ -18,10 +18,10 @@ const steps = [
   },
   {
     number: '02',
-    title: 'Nudge',
+    title: 'Practice',
     subtitle: 'AI-Powered Micro-Behaviors',
     description:
-      'Our AI engine delivers precisely-timed micro-behavior nudges through Slack, email, or meetings. Each nudge is personalized to your SCARF profile and team dynamics.',
+      'Pick one small behavior to practice — like "Ask a genuine question before stating your view." Catalyst delivers personalized nudges through Slack, email, or before your meetings. Each takes under 30 seconds.',
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
         <path d="M6 16C6 10.477 10.477 6 16 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -37,10 +37,10 @@ const steps = [
   },
   {
     number: '03',
-    title: 'Cascade',
-    subtitle: 'Ripple Through Your Org',
+    title: 'Grow',
+    subtitle: 'Measure & Cascade',
     description:
-      'Track how safety behaviors cascade from leader to team. Watch real-time ripple effects as psychological safety spreads organically across your organization.',
+      'Track your progress through Mirror Moments — side-by-side views of how you see yourself vs. how your team experiences you. As you grow, invite your direct reports to begin their own journey.',
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
         <circle cx="16" cy="8" r="3" stroke="currentColor" strokeWidth="1.5" />
@@ -118,12 +118,12 @@ export default function HowItWorks() {
             How It Works
           </p>
           <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-navy leading-tight ${inView ? 'animate-fade-in-up delay-100' : 'opacity-0'}`}>
-            Three steps to a{' '}
-            <span className="gradient-text">safer culture</span>
+            Your path to a{' '}
+            <span className="gradient-text">safer team culture</span>
           </h2>
           <p className={`mt-6 text-lg text-navy/50 leading-relaxed ${inView ? 'animate-fade-in-up delay-200' : 'opacity-0'}`}>
-            Built on David Rock's SCARF model and Amy Edmondson's research,
-            Catalyst transforms leadership behavior through invisible, science-backed coaching.
+            Built on David Rock's SCARF model and Amy Edmondson's research.
+            Private, personalized, and designed to fit into the way you already work.
           </p>
         </div>
 

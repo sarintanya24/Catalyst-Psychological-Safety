@@ -24,8 +24,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-white/30 leading-relaxed max-w-sm">
-              AI-powered psychological safety coaching that transforms how leaders
-              build trust, one invisible nudge at a time.
+              An internal tool helping leaders across our organization build
+              psychologically safe teams — one invisible nudge at a time.
             </p>
             <p className="mt-6 text-xs text-white/15">
               Built on the research of Amy Edmondson and David Rock's SCARF model.
@@ -35,10 +35,10 @@ export default function Footer() {
           {/* Links */}
           <div>
             <h4 className="text-xs font-bold tracking-widest uppercase text-white/40 mb-4">
-              Product
+              Resources
             </h4>
             <ul className="space-y-2.5">
-              {['How It Works', 'Features', 'Pricing', 'Security'].map((item) => (
+              {['How It Works', 'Features', 'Research', 'FAQ'].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase().replace(/\s/g, '-')}`}
@@ -53,10 +53,10 @@ export default function Footer() {
 
           <div>
             <h4 className="text-xs font-bold tracking-widest uppercase text-white/40 mb-4">
-              Company
+              Support
             </h4>
             <ul className="space-y-2.5">
-              {['About', 'Research', 'Blog', 'Contact'].map((item) => (
+              {['Help Center', 'Contact IT', 'Privacy', 'Accessibility'].map((item) => (
                 <li key={item}>
                   <a
                     href="#"
@@ -73,14 +73,14 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/20">
-            &copy; {new Date().getFullYear()} Catalyst. All rights reserved.
+            &copy; {new Date().getFullYear()} Catalyst &mdash; Internal Use Only
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-xs text-white/20 transition-colors hover:text-white/40">
-              Privacy Policy
+              Data Privacy Policy
             </a>
             <a href="#" className="text-xs text-white/20 transition-colors hover:text-white/40">
-              Terms of Service
+              Terms of Use
             </a>
           </div>
         </div>

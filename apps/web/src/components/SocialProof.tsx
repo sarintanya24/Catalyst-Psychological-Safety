@@ -55,40 +55,32 @@ function AnimatedNumber({ target, suffix, inView }: { target: number; suffix: st
 
 const stats = [
   {
-    value: 230,
+    value: 50,
     suffix: '%',
-    label: 'ROI on psychological safety investment',
-    source: 'Gallup',
+    label: 'Higher productivity in psychologically safe teams',
+    source: 'McKinsey',
     color: 'text-sage',
-    bgColor: 'bg-sage/10',
-    borderColor: 'border-sage/20',
   },
   {
     value: 27,
     suffix: '%',
-    label: 'Reduction in employee turnover',
+    label: 'Reduction in turnover when teams feel safe',
     source: 'Google Project Aristotle',
     color: 'text-amber',
-    bgColor: 'bg-amber/10',
-    borderColor: 'border-amber/20',
   },
   {
     value: 76,
     suffix: '%',
-    label: 'More engagement when teams feel safe',
+    label: 'More engagement when people can speak up',
     source: 'Edmondson',
     color: 'text-coral',
-    bgColor: 'bg-coral/10',
-    borderColor: 'border-coral/20',
   },
   {
-    value: 50,
-    suffix: '%',
-    label: 'Higher productivity in safe teams',
-    source: 'McKinsey',
+    value: 12,
+    suffix: 'pts',
+    label: 'Improvement in effectiveness scores within 12 weeks',
+    source: 'Humu / Perceptyx',
     color: 'text-navy',
-    bgColor: 'bg-navy/5',
-    borderColor: 'border-navy/10',
   },
 ];
 
@@ -96,7 +88,7 @@ export default function SocialProof() {
   const { ref, inView } = useInView(0.15);
 
   return (
-    <section id="results" className="relative py-24 lg:py-32 overflow-hidden">
+    <section id="why-it-matters" className="relative py-24 lg:py-32 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-navy" />
       <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-dark to-navy opacity-90" />
@@ -114,14 +106,15 @@ export default function SocialProof() {
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className={`text-sm font-semibold tracking-widest uppercase text-amber mb-4 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}>
-            The Evidence
+            Why It Matters
           </p>
           <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight ${inView ? 'animate-fade-in-up delay-100' : 'opacity-0'}`}>
             The research is clear
           </h2>
           <p className={`mt-6 text-lg text-white/50 leading-relaxed ${inView ? 'animate-fade-in-up delay-200' : 'opacity-0'}`}>
-            Psychological safety isn't soft. It's the highest-leverage investment
-            in organizational performance.
+            Psychological safety is the single most important factor in
+            high-performing teams. These aren't opinions — they're outcomes
+            measured across thousands of teams.
           </p>
         </div>
 

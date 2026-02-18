@@ -13,8 +13,7 @@ export default function Navbar() {
   const links = [
     { label: 'How it works', href: '#how-it-works' },
     { label: 'Features', href: '#features' },
-    { label: 'Results', href: '#results' },
-    { label: 'Pricing', href: '#pricing' },
+    { label: 'Why it matters', href: '#why-it-matters' },
   ];
 
   return (
@@ -57,10 +56,10 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#waitlist"
+              href="#get-started"
               className="rounded-full bg-navy px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-navy-light hover:shadow-lg"
             >
-              Join Waitlist
+              Get Started
             </a>
           </div>
 
@@ -95,11 +94,11 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="#waitlist"
+                href="#get-started"
                 onClick={() => setMobileOpen(false)}
                 className="rounded-full bg-navy px-5 py-2.5 text-sm font-semibold text-white text-center transition-all hover:bg-navy-light mt-2"
               >
-                Join Waitlist
+                Get Started
               </a>
             </div>
           </div>
