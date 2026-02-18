@@ -279,7 +279,7 @@ describe("Scenario 2: Nudge Engagement Cycle", () => {
 
     expect(res.statusCode).toBe(200);
     const user = getStore().users[USER_ID];
-    expect(user.consecutiveSkips).toBe(3);
+    expect(user.consecutiveSkips).toBe(0); // Reset after auto-dial-down to prevent deadlock
     expect(user.dialFrequency).toBe("gentle"); // Auto-dialed!
   });
 

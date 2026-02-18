@@ -9,15 +9,17 @@ const app = Fastify({ logger: true });
 
 // Plugins
 await app.register(cors, { origin: true });
-await app.register(jwt, { secret: process.env.JWT_SECRET || "dev-secret" });
+if (!process.env.JWT_SECRET) {
+  throw new Error("JWT_SECRET environment variable is required");
+}
+await app.register(jwt, { secret: process.env.JWT_SECRET });
 
-// Decorate for TypeScript
-app.decorate("authenticate", async function (request: any, reply: any) {
-  try {
-    await request.jwtVerify();
-  } catch (err) {
-    reply.status(401).send({ error: "Unauthorized" });
+// Zod validation error handler — return 400 instead of 500
+app.setErrorHandler((error, _request, reply) => {
+  if (error.validation || error.name === "ZodError") {
+    return reply.status(400).send({ error: "Validation error", details: error.message });
   }
+  reply.status(error.statusCode ?? 500).send({ error: error.message });
 });
 
 // Health check

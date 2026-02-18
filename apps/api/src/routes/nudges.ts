@@ -95,9 +95,11 @@ export default async function nudgeRoutes(app: FastifyInstance) {
           streakCount: 0,
         };
 
-        // Auto-dial down to gentle after 3+ consecutive skips
+        // Auto-dial down to gentle after 3+ consecutive skips, then reset
+        // so the user can receive nudges again at the reduced frequency
         if (newSkips >= AUTO_DIAL_DOWN_AFTER_SKIPS) {
           updates.dialFrequency = "gentle";
+          updates.consecutiveSkips = 0;
         }
 
         await db
