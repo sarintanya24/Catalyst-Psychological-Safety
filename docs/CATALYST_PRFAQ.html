@@ -270,6 +270,83 @@
   .navy { color: var(--navy); }
   .bold { font-weight: 700; }
   .divider { border-top: 1px solid var(--border); margin: 12px 0; }
+
+  /* Bot interaction cards */
+  .bot-card {
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--sage);
+    border-radius: 6px;
+    margin: 8px 0;
+    padding: 10px 14px;
+    background: var(--cream);
+    font-size: 9.5pt;
+  }
+  .bot-card .bot-header {
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 9pt;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+  }
+  .bot-card .bot-body { color: var(--text); line-height: 1.5; }
+  .bot-card .bot-buttons {
+    margin-top: 8px;
+    display: flex;
+    gap: 6px;
+  }
+  .bot-card .bot-btn {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 4px;
+    font-size: 8.5pt;
+    font-weight: 600;
+    background: var(--sage);
+    color: white;
+    cursor: default;
+  }
+  .bot-card .bot-btn.secondary {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-light);
+  }
+  .bot-card-amber { border-left-color: var(--amber); }
+  .bot-card-coral { border-left-color: var(--coral); }
+
+  /* Zoom sidebar mock */
+  .zoom-sidebar {
+    background: #1a1a2e;
+    color: #e0e0e8;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 8.5pt;
+    line-height: 1.5;
+    margin: 8px 0;
+    max-width: 260px;
+  }
+  .zoom-sidebar .zs-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 9pt;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    margin-bottom: 6px;
+  }
+  .zoom-sidebar .zs-on { color: var(--sage); }
+  .zoom-sidebar .zs-label { color: var(--amber); font-weight: 600; font-size: 7.5pt; letter-spacing: 1px; text-transform: uppercase; margin-top: 6px; }
+  .zoom-sidebar .zs-bar { background: var(--coral); height: 6px; border-radius: 3px; margin: 2px 0 4px; }
+  .zoom-sidebar .zs-muted { color: #aab; font-size: 8pt; }
+  .zoom-sidebar .zs-nudge { border-top: 1px solid rgba(255,255,255,0.15); padding-top: 5px; margin-top: 6px; font-style: italic; color: var(--sage); }
+
+  /* Scenario label */
+  .scenario-label {
+    font-size: 8pt;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 3px;
+  }
 </style>
 </head>
 <body>
@@ -829,6 +906,165 @@
 
   <span class="confidential">Confidential &mdash; Internal Use Only</span>
   <span class="page-number">Page 14</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 15 — Appendix: Nudge Scenarios in Action                 -->
+<!-- ============================================================ -->
+<div class="page" style="page-break-after: always;">
+
+  <div class="section-label mt-0">Appendix A &mdash; What Nudges Look Like in Practice</div>
+
+  <p class="text-xs" style="margin-bottom: 12px;">Every Catalyst interaction follows a <strong>Question &rarr; Response &rarr; Reinforcement</strong> loop. Tone: peer-level (never instructional), curious (never judgmental), brief (max 3 lines), and actionable. Below are real scenarios showing how nudges appear across channels.</p>
+
+  <h4>Scenario 1: Pre-Meeting Nudge &mdash; Slack (15 min before a 1:1)</h4>
+  <p class="scenario-label">Context: A VP has a 1:1 with a direct report who has been quiet in recent team meetings</p>
+  <div class="bot-card">
+    <div class="bot-header">Catalyst</div>
+    <div class="bot-body">
+      You have a 1:1 with James in 15 minutes.<br><br>
+      Today's micro-practice:<br>
+      <strong>&ldquo;Ask a genuine question before stating your view.&rdquo;</strong><br><br>
+      Try this: <em>&ldquo;What&rsquo;s on your mind that we haven&rsquo;t talked about?&rdquo;</em>
+    </div>
+    <div class="bot-buttons">
+      <span class="bot-btn">Tried it</span>
+      <span class="bot-btn secondary">Skip</span>
+      <span class="bot-btn secondary">Later</span>
+    </div>
+  </div>
+
+  <h4>Scenario 2: Post-Decision Nudge &mdash; Teams (after an all-hands)</h4>
+  <p class="scenario-label">Context: A senior director just announced a reorganization in a team meeting</p>
+  <div class="bot-card bot-card-amber">
+    <div class="bot-header">Catalyst</div>
+    <div class="bot-body">
+      You just shared a significant organizational change with your team.<br><br>
+      In moments of high uncertainty, teams look for signals that it&rsquo;s safe to ask hard questions.<br><br>
+      One thing to try: <em>&ldquo;I know this raises a lot of questions. What concerns haven&rsquo;t I addressed yet?&rdquo;</em><br><br>
+      Then wait. Count to seven silently. The silence is where trust gets built.
+    </div>
+    <div class="bot-buttons">
+      <span class="bot-btn">Tried it</span>
+      <span class="bot-btn secondary">Skip</span>
+    </div>
+  </div>
+
+  <h4>Scenario 3: Post-Meeting Insight &mdash; Zoom AI Companion</h4>
+  <p class="scenario-label">Context: A product review meeting just ended. The AI Companion analyzed the meeting summary.</p>
+  <div class="bot-card bot-card-coral">
+    <div class="bot-header">Catalyst &mdash; Meeting Insight</div>
+    <div class="bot-body">
+      Your product review just ended. Based on the meeting summary:<br>
+      &bull; You spoke for 68% of the meeting<br>
+      &bull; 3 team members didn&rsquo;t contribute<br>
+      &bull; Maya raised a timeline concern that wasn&rsquo;t addressed<br><br>
+      One thing to try in your next meeting:<br>
+      <em>&ldquo;I&rsquo;d love to hear from everyone &mdash; Maya, what&rsquo;s your take?&rdquo;</em>
+    </div>
+    <div class="bot-buttons">
+      <span class="bot-btn">Helpful</span>
+      <span class="bot-btn secondary">Not relevant</span>
+    </div>
+  </div>
+
+  <h4>Scenario 4: Zoom In-Meeting Sidebar (Real-Time, visible only to the leader)</h4>
+  <p class="scenario-label">Context: A VP is in a live team meeting. The sidebar provides ambient, glanceable cues.</p>
+  <div class="zoom-sidebar">
+    <div class="zs-header"><span>Catalyst</span> <span class="zs-on">&#9673; ON</span></div>
+    <div class="zs-label">Meeting Pulse</div>
+    <div style="color: var(--sage);">Good</div>
+    <div class="zs-label">Your Airtime</div>
+    <div class="zs-bar" style="width: 68%;"></div>
+    <div>68% &mdash; Try bringing others in</div>
+    <div class="zs-label">Quiet Voices</div>
+    <div class="zs-muted">&bull; Alex (0 min)<br>&bull; Priya (1 min)</div>
+    <div class="zs-nudge">Maya made a point about timeline risk that wasn&rsquo;t acknowledged. Try a 5-second pause after your next question.</div>
+    <div style="margin-top: 6px; text-align: center;">
+      <span style="background: rgba(255,255,255,0.15); padding: 2px 10px; border-radius: 3px; font-size: 7.5pt;">Pause nudges</span>
+    </div>
+  </div>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 15</span>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 16 — More Nudge Scenarios + Mirror Moment                -->
+<!-- ============================================================ -->
+<div class="page">
+
+  <div class="section-label mt-0">Appendix A (Continued) &mdash; More Scenarios</div>
+
+  <h4>Scenario 5: Weekly Reflection &mdash; Monday Morning Email</h4>
+  <p class="scenario-label">Context: A leader who has been practicing &ldquo;naming your fallibility&rdquo; for three weeks</p>
+  <div class="bot-card bot-card-amber">
+    <div class="bot-header">Catalyst &mdash; Weekly Check-in</div>
+    <div class="bot-body">
+      Last week you practiced &ldquo;naming your fallibility&rdquo; 3 times.<br>
+      Your team&rsquo;s comfort-with-risk score moved up 2 points.<br><br>
+      This week&rsquo;s question:<br>
+      <em>&ldquo;When was the last time someone openly disagreed with you? What made that possible &mdash; or not?&rdquo;</em>
+    </div>
+    <div class="bot-buttons">
+      <span class="bot-btn">Share a thought</span>
+      <span class="bot-btn secondary">Just reflecting</span>
+    </div>
+  </div>
+
+  <h4>Scenario 6: Difficult Conversation Prep &mdash; Slack (before a performance review)</h4>
+  <p class="scenario-label">Context: A director has a performance review in 30 minutes with a struggling team member</p>
+  <div class="bot-card">
+    <div class="bot-header">Catalyst</div>
+    <div class="bot-body">
+      You have a performance conversation with Sarah in 30 minutes.<br><br>
+      High-safety leaders frame difficult feedback by <strong>leading with care and curiosity first</strong>.<br><br>
+      Try opening with: <em>&ldquo;I want to start by understanding your perspective. How do you feel things have been going?&rdquo;</em><br><br>
+      Then share your observations honestly, without softening them into vagueness.
+    </div>
+    <div class="bot-buttons">
+      <span class="bot-btn">Tried it</span>
+      <span class="bot-btn secondary">Skip</span>
+      <span class="bot-btn secondary">Later</span>
+    </div>
+  </div>
+
+  <h4>Scenario 7: Email Weekly Digest</h4>
+  <p class="scenario-label">Context: Week 4 summary for a leader whose first Mirror Moment is ready</p>
+  <div class="bot-card" style="border-left-color: var(--navy);">
+    <div class="bot-header">Subject: Your Catalyst Brief &mdash; Week 4</div>
+    <div class="bot-body">
+      Hi Sarah,<br><br>
+      This week:<br>
+      &nbsp;&nbsp;You engaged with 3 of 3 nudges<br>
+      &nbsp;&nbsp;Team safety pulse: 74 &rarr; 76 (+2)<br>
+      &nbsp;&nbsp;Focus: &ldquo;Wait 5&ndash;7 seconds after asking&rdquo;<br><br>
+      Insight: Leaders who pause 5+ seconds after a question get 2x more responses from quieter team members.<br><br>
+      <strong>Your Mirror Moment is ready</strong> &mdash; your team&rsquo;s feedback is in.
+    </div>
+    <div class="bot-buttons">
+      <span class="bot-btn">Open Catalyst</span>
+    </div>
+  </div>
+
+  <h4>Scenario 8: Auto-Dial-Down &mdash; Slack (after 3 consecutive skips)</h4>
+  <p class="scenario-label">Context: A busy executive has skipped their last 3 nudges during board prep week</p>
+  <div class="bot-card" style="border-left-color: var(--text-muted);">
+    <div class="bot-header">Catalyst</div>
+    <div class="bot-body">
+      Looks like it&rsquo;s been a busy stretch. We&rsquo;ve quieted things down.<br><br>
+      No nudges until you&rsquo;re ready. No streaks. No guilt.<br><br>
+      <em>Tap here whenever you want to pick back up.</em>
+    </div>
+    <div class="bot-buttons">
+      <span class="bot-btn secondary">Resume nudges</span>
+    </div>
+  </div>
+
+  <p class="text-xs" style="margin-top: 14px; color: var(--text-muted); font-style: italic;">Every scenario above represents an actual interaction pattern in the Catalyst system. The tone is always peer-level, the ask is always one specific thing, and the leader always controls the pace. This is what invisible coaching looks like: not a new obligation, but existing moments made slightly better.</p>
+
+  <span class="confidential">Confidential &mdash; Internal Use Only</span>
+  <span class="page-number">Page 16</span>
 </div>
 
 </body>
